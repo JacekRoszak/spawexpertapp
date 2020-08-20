@@ -1,0 +1,191 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @media (min-width: 1550px){
+  .btn-lg {
+    font-size: 64px !important;
+    padding:  0px 15px 0px 15px !important;
+    margin-bottom: 0;
+  }
+    
+ }
+ @media (max-width: 1549px){
+  .btn-lg {
+  font-size: 48px !important;
+  padding:  0px 15px 0px 15px !important;
+  margin-bottom: 0;
+}
+
+ }
+
+ @media (min-width: 768px){
+ .navbar-nav > li > a {
+     padding-top: 0px;
+     padding-bottom: 0px;
+ }
+ .navbar-nav {
+  float: none;
+  margin: 0;
+}
+.navbar-expand-lg .navbar-toggler {
+  display: none;
+}
+}
+
+#about-card{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-top{
+   min-height: 220px;
+   background-image: asset_url("tlo.jpg");
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+
+
+.text-dark {
+  color: rgb(53, 53, 53) !important;
+
+}
+
+.btn-lg a:hover{
+  color: black;
+  text-decoration: none;
+
+}
+ .my-scroll
+{
+  overflow: auto;
+  height: 70vh;
+}
+
+  .card-div
+  {
+    overflow: visible !important;
+  }
+
+
+  .card-inner {
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  .card-inner:hover{
+    z-index: 100;
+
+    transform: scale(1.5);
+
+  }
+
+
+  h2{
+    font-size: 48px !important;
+  }
+
+  h3{
+    font-size: 32px !important;
+  }
+  h4{
+    font-size: 26px !important;
+  }
+  h5{
+    font-size: 20px !important;
+  }
+  h6{
+    text-indent: 30px;
+    font-size: 16px !important;
+  }
+
+  .law-nav{
+    font-size: 18px !important;
+  }
+  .law-nav p{
+    font-size: 26px !important;
+  }
+
+  .law-nav .nav-sm-item{
+    font-size: 16px !important;
+    
+  }
+
+  .law-nav a{
+    color: black !important;
+  }
+
+ body{
+   padding-top: 0px ;
+   padding-bottom: 30px;
+}
+ 
+.my-carousel{
+  border-radius: 20px !important;
+}
+
+.my-nav{
+  font-size: 56px;
+  font-family: 'Alata', sans-serif; 
+  padding: 0px;
+
+}
+
+.card-title{
+  font-size: 20px !important;
+}
+
+.card-text{
+  font-size: 14px !important;
+}
+
+p{
+  margin-bottom: 0px !important;
+}
+
+#main_container{
+  font-size: 22px ;
+  font-family: 'Alata', sans-serif; 
+
+}
+
+#head{
+  font-size: 28px !important;
+}
+
+.p-6{
+  padding: 50px !important;
+}
+
+ .logo{
+   background-image: asset_url('1.png');
+   height: 140px;
+   width: 380px;
+   background-size: contain;
+   background-repeat: no-repeat;
+ }
+
+ .logo2{
+   width: 100%;
+   min-height: 150px;
+  background-image: asset_url('1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
