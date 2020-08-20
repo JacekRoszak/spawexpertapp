@@ -1,15 +1,15 @@
 .sticky-top.page-top.mb-4
-        nav.navbar.navbar-expand-lg.navbar-light.my-nav.mt-5
-            = link_to '', root_path, class: "btn logo d-block align-top p-0 mx-auto mt-1"
-            button.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
-                span.navbar-toggler-icon
-            .collapse.mx-auto.mb-auto.navbar-collapse#navbarSupportedContent
-                ul.navbar-nav.mx-auto.text-center.mb-4
-                    li.nav-item.btn-lg
-                        = link_to "OFERTA", root_path, class: "my-auto text-dark" 
-                    li.nav-item.btn-lg
-                        = link_to "REALIZACJE", realizations_path, class: " text-dark" 
-                    li.nav-item.btn-lg
-                        = link_to "PRZEPISY", law_path, class: "text-dark" 
-                    li.nav-item.btn-lg
-                        = link_to "FIRMA", about_path, class: "text-dark" 
+    nav.navbar.navbar-expand-lg.navbar-light.my-nav.mt-5
+        = link_to '', root_path, class: "btn logo d-block align-top p-0 mt-1"
+        button.mx-auto.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse.mx-auto.mb-auto#navbarSupportedContent
+            ul.navbar-nav.mx-auto.text-center.mb-4
+                li.nav-item.btn-lg
+                    = link_to "OFERTA", root_path, class: "my-auto text-dark" 
+                li.nav-item.btn-lg
+                    = link_to "REALIZACJE", realizations_path, class: " text-dark" 
+                li.nav-item.btn-lg
+                    = link_to "PRZEPISY", law_path, class: "text-dark" 
+                li.nav-item.btn-lg
+                    = link_to "FIRMA", about_path, class: "text-dark" 

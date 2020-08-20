@@ -45,6 +45,32 @@
 }
 }
 
+@media (min-width: 980px){
+  .page-top{
+    min-height: 160px;
+  /*  background-image: asset_url("tlo.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+ */  z-index: 1 !important;
+  }
+ 
+}
+
+.navbar-light .navbar-toggler-icon{
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo{
+  background-image: asset_url('1.png');
+  height: 140px;
+  width: 380px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 #about-card{
   max-width: 600px;
@@ -52,14 +78,6 @@
   margin-right: auto;
 }
 
-.page-top{
-   min-height: 220px;
-   background-image: asset_url("tlo.jpg");
-   background-size: 100% auto;
-   background-repeat: no-repeat;
-   background-position: center;
-  z-index: 1 !important;
- }
 
 
 .text-dark {
@@ -132,7 +150,8 @@
 
  body{
    padding-top: 0px ;
-   padding-bottom: 30px;
+   background-image: asset_url("brushed-metal-3.jpg");
+   background-repeat: repeat;
 }
  
 .my-carousel{
@@ -175,13 +194,6 @@ p{
   padding: 50px !important;
 }
 
- .logo{
-   background-image: asset_url('1.png');
-   height: 140px;
-   width: 380px;
-   background-size: contain;
-   background-repeat: no-repeat;
- }
 
  .logo2{
    width: 100%;
