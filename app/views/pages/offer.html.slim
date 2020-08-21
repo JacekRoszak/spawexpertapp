@@ -1,47 +1,54 @@
 .container
   .col-md-12.mt-5.text-center.p-4
-    p#head Wykonujemy hale według życzenia klienta o dowolnych wymiarach i materiałach. Minimalna powierzchnia to 96m <sup>2
+    p#head1 
+      | Wykonujemy 
+      strong hale namiotowe 
+      | według życzenia klienta. Dowolne wymiary i materiały przy minimalnej powierzchni 96m <sup>2
 
 
-  .col-md-6.mt-5.p-6
-    | Możemy zaadoptować halę na potrzeby:
-    ul
-    li magazynowe
-    li przemysłowe
-    li sportowe
-    li imprezowe
-    li rolnicze
-    li jeździeckie
+  .col-md-12.mt-5
+    nav.navbar.navbar-expand-lg.navbar-light.my-nav.mt-5.p-0
+      .collapse.navbar-collapse.mx-auto.mb-auto.p-0    
+        ul.navbar-nav.mx-auto.text-center.mb-4.p-0
+          li.nav-item.btn-lg
+              p#head.card-text.mb-2 Magazynowe
+              = image_tag  "inventory.png", class: "height: auto;"
+          li.nav-item.btn-lg
+              p#head.card-tex.mb-2 Przemysłowe
+              = image_tag  "factory.png", class: "height: auto;"
+          li.nav-item.btn-lg
+              p#head.card-text.mb-2 Sportowe
+              = image_tag  "football-player.png", class: "height: auto;"
+          li.nav-item.btn-lg
+              p#head.card-text.mb-2 Imprezowe
+              = image_tag  "cheers.png", class: "height: auto;"
+          li.nav-item.btn-lg
+              p#head.card-text.mb-2 Rolnicze
+              = image_tag  "tractor.png", class: "height: auto;"
+          li.nav-item.btn-lg
+              p#head.card-text.mb-2 Jeździeckie
+              = image_tag  "bet.png", class: "height: auto;"
 
 
 
 
-  .col-md-6.mt-5
-    #carouselExampleControls.carousel.slide data-ride="carousel" 
-      .carousel-inner.my-carousel
-        .carousel-item.active
-          = image_tag  "slide1.jpg", class: "d-block w-100" 
-        .carousel-item
-          = image_tag  "slide2.jpg", class: "d-block w-100" 
-        .carousel-item
-          = image_tag  "slide3.jpg", class: "d-block w-100" 
-        .carousel-item
-          = image_tag  "slide4.jpg", class: "d-block w-100" 
-        .carousel-item
-          = image_tag  "slide5.jpg", class: "d-block w-100" 
-        .carousel-item
-          = image_tag  "slide6.jpg", class: "d-block w-100" 
-      a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-        span.carousel-control-prev-icon aria-hidden="true" 
-        span.sr-only Poprzednie
-      a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-        span.carousel-control-next-icon aria-hidden="true" 
-        span.sr-only Następne
 
-  .col-md-12.mt-5.text-center.p-4
-    p#head Montaż u klienta nawet w 3 tygodnie od zamówienia! 
-    p#head Trwa średnio od 2 - 4 dni. W zależności od wymiarów.
 
+
+
+.col-md-12.mt-5.text-center.p-4.bg-dark.text-white
+  .container#carousel-container
+    .text-container
+      .carousel-text
+        .inner
+          .element Montaż u klienta nawet w 3 tygodnie od zamówienia! 
+          .element Trwa średnio od 2 - 4 dni. W zależności od wymiarów.
+          .element Hale są objęte gwarancją.
+          .element Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
+
+
+
+.container
   .col-md-6.mt-5.rounded
     #carouselExampleControls.carousel.slide data-ride="carousel" 
       .carousel-inner.my-carousel
@@ -66,16 +73,18 @@
 
 
   .col-md-6.mt-5.p-6
-    | Halę można pokryć:
+    strong Halę można pokryć:
     li materiałem namiotowym (plandeką)
     li blachą trapezową
     li płytą warstwową
     li termoizolacyjnym dachem pompowanym
 
-  .col-md-12.mt-5.text-center.p-4
+.col-md-12.mt-5.text-center.p-4.bg-dark.text-white
+  .container
     p#head Hale można skonfigurować według własnych potrzeb. 
     p#head Bramy i drzwi techniczne w dowolnym miejscu. 
 
+.container
   .col-md-6.mt-5.p-6
     | Szczególną uwagę przywiązujemy do mocowania hali do podłoża. Mocując hale wykorzystując kotwy chemiczne. 
     | Posadowienie na: 
@@ -107,10 +116,11 @@
         span.carousel-control-next-icon aria-hidden="true" 
         span.sr-only Następne
 
-  .col-md-12.mt-5.text-center.p-4
+.col-md-12.mt-5.text-center.p-4.bg-dark.text-white
+  .container
     p#head Wszystkie hale wykonywane są zgodnie z wcześniej przygotowaną dokumentacją konstruktorską (projekt). Posiadają wszelkie normy bezpieczeństwa.  
 
-
+.container
   .col-md-6.mt-5
     #carouselExampleControls.carousel.slide data-ride="carousel" 
       .carousel-inner.my-carousel
@@ -143,12 +153,11 @@
     li cynkowana 
     li malowana
 
-  .col-md-12.mt-5.text-center.p-4
-    p#head Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
 
+.container
   .col-md-6.mt-5.p-6
     li Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
-    li Hale są objęte gwarancją.
+
 
   .col-md-6.mt-5
     #carouselExampleControls.carousel.slide data-ride="carousel" 
@@ -172,9 +181,11 @@
         span.carousel-control-next-icon aria-hidden="true" 
         span.sr-only Następne
 
-  .col-md-12.mt-5.text-center.p-4
+.col-md-12.mt-5.text-center.p-4.bg-dark.text-white
+  .container
     p#head Wykorzystujemy atestowaną stal konstrukcyjną gatunku St3s lub wyższą, zabezpieczoną poprzez cynkowanie ogniowe.
 
+.container
   .col-md-6.mt-5
     #carouselExampleControls.carousel.slide data-ride="carousel" 
       .carousel-inner.my-carousel
