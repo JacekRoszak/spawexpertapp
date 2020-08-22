@@ -1,44 +1,354 @@
 main.container
 
-    h1.mb-3
-        strong Czynniki atmosferyczne
+    #accordionExample.accordion
+        .card
+            #headingOne.card-header
+                button.btn.btn-link.collapsed aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" 
+                    h2.text-dark
+                        strong Obciążalność śniegiem &dArr;
+            #collapseOne.collapse aria-labelledby="headingOne" data-parent="#accordionExample" 
+                .card-body
+                    h5
+                        ul
+                            li Śnieg jest oddziaływaniem stanowiącym główne obciążenie dla wielu obiektów budowlanych, szczególnie w przypadku budynków wielkopowierzchniowych o konstrukcji stalowej. Zaprojektowany budynek, w tym szczególnie jego konstrukcja dachowa musi być wytrzymała na zalegające na niej warstwy śniegu i inne występujące na niej obciążenia. Dlatego podczas projektowania każdego budynku należy zwrócić uwagę w jakiej strefie śniegowej będzie on położony.
+                            li Jako odniesienie do wyznaczenia obciążenia śniegiem dachów stosuje się obciążenie śniegiem gruntów, które może być wyznaczane na podstawie pomiarów w stacjach meteorologicznych na danym terenie. Należy jednak zaznaczyć, że są to jedynie dane orientacyjne, bo często ciężar pokrywy śnieżnej na gruncie może być mniejszy niż na dobrze izolowanym dachu w tych samych warunkach. W przypadku pokrywy śnieżnej na gruncie pod wpływem temperatury śnieg może topić się i wsiąkać do gruntu, przez co warstwa jest mniejsza niż byłaby na dachu. Dlatego podczas obliczania obciążenia śniegowego na jeden metr kwadratowy dachu uwzględnia się różne współczynniki, które zależą m.in. od bliskości sąsiednich budynków czy też kształtu dachu. Obciążenie to może być inne w różnych częściach tego samego dachu.
+                            li Obciążenie śniegiem jest traktowane jako obciążenie zmienne umiejscowione, statyczne
+                            li Standardowo obciążenie śniegiem dachu ustala się dla przejściowej i trwałej sytuacji obliczeniowej 
+                            li Dodatkowo na terenie Polski należy uwzględniać sytuację wyjątkową obciążenia zaspami śnieżnymi 
+                            li Ciężar właściwy śniegu zależny jest od temperatury, śnieg sypki waży mniej niż lód. Należy o tym pamiętać zwłaszcza podczas odwilży po opadach śniegu, bo zwiększająca się temperatura powoduje, że śnieg topi się i przy jej spadku zmienia w oblodzone warstwy groźne dla konstrukcji budynku.
+                            li Podczas projektowania budynków przyjmuje się określony czas ich użyteczności zwykle od dziesięciu do kilkuset lat. Im dłuższy okres użyteczności budynku tym współczynnik bezpieczeństwa musi być wyższy.
+                            li Do 2006 roku podczas tego typu wyliczeń przyjmowano tylko pięcioletni okres użyteczności budynków, co oznaczało, że raz na pięć lat, obciążenie śniegiem przyjęte jako założenie do zaprojektowania konstrukcji obiektu mogło zostać przekroczone . Takie warunki określała norma PN-80/B-02010 Obciążenia w obliczeniach statycznych – Obciążenie śniegiem (w skrócie PN-B).
+                    br/
 
-    .row
-        .col-5
-            h5
-                strong Obciążalność śniegiem
-            h6 Śnieg jest oddziaływaniem stanowiącym główne obciążenie dla wielu obiektów budowlanych, szczególnie w przypadku budynków wielkopowierzchniowych o konstrukcji stalowej. Zaprojektowany budynek, w tym szczególnie jego konstrukcja dachowa musi być wytrzymała na zalegające na niej warstwy śniegu i inne występujące na niej obciążenia. Dlatego podczas projektowania każdego budynku należy zwrócić uwagę w jakiej strefie śniegowej będzie on położony.
-            h6 Obciążalność śniegową w różnych krajach muszą uwzględniać również panele słoneczne. W zależności od kraju w którym są montowane powinny wytrzymywać mniejsze lub większe obciążenia i mieć mniej lub bardziej wytrzymałą konstrukcję. Oczywiście w krajach gdzie opadu śniegu praktycznie nie występują wytrzymałość ta może być mniejsza niż w krajach z intensywnymi opadami. Jak możemy przeczytać na stronie producentów panele najczęściej wytrzymują 5400 Pa obciążenie śniegiem i 2400Pa obciążenie wiatrem.
-            h6 Jako odniesienie do wyznaczenia obciążenia śniegiem dachów stosuje się obciążenie śniegiem gruntów, które może być wyznaczane na podstawie pomiarów w stacjach meteorologicznych na danym terenie. Należy jednak zaznaczyć, że są to jedynie dane orientacyjne, bo często ciężar pokrywy śnieżnej na gruncie może być mniejszy niż na dobrze izolowanym dachu w tych samych warunkach. W przypadku pokrywy śnieżnej na gruncie pod wpływem temperatury śnieg może topić się i wsiąkać do gruntu, przez co warstwa jest mniejsza niż byłaby na dachu. Dlatego podczas obliczania obciążenia śniegowego na jeden metr kwadratowy dachu uwzględnia się różne współczynniki, które zależą m.in. od bliskości sąsiednich budynków czy też kształtu dachu. Obciążenie to może być inne w różnych częściach tego samego dachu.
-        .col-7.text-center.pt-5
-            = image_tag  "sniegiem.jpg"
-    .col-12
-            h6 Ciężar właściwy śniegu zależny jest od temperatury, śnieg sypki waży mniej niż lód. Należy o tym pamiętać zwłaszcza podczas odwilży po opadach śniegu, bo zwiększająca się temperatura powoduje, że śnieg topi się i przy jej spadku zmienia w oblodzone warstwy groźne dla konstrukcji budynku.
-            h6 Podczas projektowania budynków przyjmuje się określony czas ich użyteczności zwykle od dziesięciu do kilkuset lat. Im dłuższy okres użyteczności budynku tym współczynnik bezpieczeństwa musi być wyższy.
-            h6 Do 2006 roku podczas tego typu wyliczeń przyjmowano tylko pięcioletni okres użyteczności budynków, co oznaczało, że raz na pięć lat, obciążenie śniegiem przyjęte jako założenie do zaprojektowania konstrukcji obiektu mogło zostać przekroczone . Takie warunki określała norma PN-80/B-02010 Obciążenia w obliczeniach statycznych – Obciążenie śniegiem (w skrócie PN-B).
+                    h3 Odśnieżanie
+                    h5.text-danger.ml-4 Jeżeli przewiduje się sztuczne usuwanie lub przemieszczanie śniegu na dachu, to dach należy zaprojektować z uwzględnieniem odpowiednich ukłaqdów obciążeń. 
+                    h5.ml-4 Niewłaściwa kolejność w odśnieżaniu dachu może spowodować awarię, poza tym kucie i skrobanie możę uszkodzić pokrycie dachu.
+
+                    h3 Ciężar śniegu
+                    h5.ml-4 W regionach, gdzie możliwe są opadyh deszczu na śnieg, topnienie i zamarzanie śniegu, należy uwzględnić większe obciążenie śniegiem dachu, zwłaszcza w przypadjacg, gdy śnieg i lód mogą blokować odwodnienie dachu.
+                    br/
+
+                    h5.text-center.offset-1.col-10
+                        table.table.table-bordered
+                            tr
+                                th Rodzaj śniegu
+                                th 
+                                    | ciężak objętościowy [kN/m 
+                                    sup 3
+                                    | ]
+                            tr
+                                td świeży
+                                td 1,0
+                            tr
+                                td osiadły (więcej niż kilka godzin po opadach)
+                                td 2,0
+                            tr
+                                td stary (więcej niż kilka tygodni po opadach)
+                                td 2,5 - 3,5
+                            tr
+                                td mokry
+                                td 4,0
+                            tr
+                                td firn
+                                td 4,0 - 8,0
+                            tr
+                                td lód
+                                td 8,5 - 9,0
+                    br/
+                    h3 Problemy z odprowadzeniem wody
+                    h4 Topienie śniegu:
+                    h5
+                        ul
+                            li Gdy dachy są dobrze izolowane lub gdy mamy stropodachy wentylowane, śnieg może topnieć od góry w ogrzewany promieniami słonecznymi.
+                            li Gdy dachy nie są izolowan, ciepło przenika przez nie, a śnieg topnieje od spodu.
+                    br/
+                    h3 Obciążenie śniegiem
+                    h5 Obciążemoe śniegiem dachów w sytuacji trwałej i przejściowej wyznacza się z zależności:
+
+                    h2.text-center.m-5
+                        | s = &mu;
+                        sub i
+                        | C
+                        sub e
+                        | C
+                        sub t
+                        | s
+                        sub k
+
+                    h5 gdzie: 
+                    h5 
+                        | &mu;
+                        sub i
+                        |  - współczynnik kształtu dachu
+                    h5 
+                        | C
+                        sub e
+                        |  - współczynnik ekspozycji
+                    h5 
+                        | C
+                        sub t
+                        |  - współczynnik termiczny
+                    h5 
+                        | s
+                        sub k
+                        |  - wartość charakterystyczna obciążenia śniegiem gruntu
+                    br/
+
+                    h3 Współczynniki kombinacyjne &Psi;
+                    br/
+                    h5.offset-3.col-6.text-center
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th Położenie
+                                    th &Psi; 0
+                                    th &Psi; 1
+                                    th &Psi; 2
+                            tbody
+                                tr  
+                                    td 	> 1000 m n.p.m
+                                    td 0,7
+                                    td 0,5
+                                    td 0,2
+                                tr 
+                                    td 	&le; 1000 m n.p.m
+                                    td 0,5
+                                    td 0,2
+                                    td 0
+                    br/
+                    h3 Wyjątkowe obciążenie śniegiem
+                    h4 Sposób wyznaczania wyjątkowego obciążenia śniegiem
+                    h5.ml-3 Dla lokalizacji, gdzie może wystąpić wyjątkowe obciażenie śniegiem gruntu, może być ono wyznaczone ze wzoru:
+                    h2.text-center.m-5 
+                        | S
+                        sub Ad
+                        |  = C
+                        sub esl
+                        | S
+                        sub k
+                    h5 W którym:
+                    h6
+                        ul
+                            li 
+                                | S
+                                sub Ad
+                                |  - Wartość obliczeniowa wyjątkowego obciążenia śniegiem gruntu dla danej lokalizacji
+                            li
+                                | C
+                                sub esl
+                                |  - Współczynnik wyjątkowego obciążenia śniegiem. Może być ustalona w załączniku krajowym. Zalecana wartość to 2,0.
+                            li 
+                                | S
+                                sub k
+                                |  - Wartość charakterystyczna obciążenia śniegiem gruntu dla danej lokalizacji
+
+                    h3 
+                        | Współczynnik ekspozycji C
+                        sub e
+                    
+                    h5.ml-4 Zależy od rodzaju terenu otaczającego analizowany budynek. Rozróżnia się trzy rodzaje terenu.
+                    br/
+                    h5.offset-3.col-6 
+                        table.table.table-bordered
+                            tr  
+                                th Teren
+                                th 
+                                    |C
+                                    sub e
+                            tr
+                                td Wystawiony na działanie wiatru
+                                td 0,8
+                            tr
+                                td Normalny
+                                td 1,0
+                            tr
+                                td Osłonięty od wiatru
+                                td 1,2
+                    br/
+                    h5.ml-4 Teren wystawiony na działanie wiatru: płaskie obszary bez przeszkód, otwarte ze wszystkich stron, bez osłon lub z niewielkimi osłonami uformowanymi przez teren wyższe budowle lub drzewa
+                    h5.ml-4 Teren normalny: obszary, na których niew występuje znaczące przenosZenie śniegu przez wiatr na budowle z powodu ukształtowania terenu, innych budowli lub drzew
+                    h5.ml-4 Teren osłonięty: obszar, na którym rozpatrywana budowla jest znacznie niższa niż otaczająćy ją teren lub otoczona wysokimi drzewami, budowlami    
+
+                    br/
+                    h3 
+                        | Współczynnik termiczny C
+                        sub t
+                    
+                    h5.ml-4 Współczynnik termiczny o wartości innej niż 1 stosuje się w przypadku dachów, których izolachja termiczna jest słaba. Szczególnie w przypadku dachód szklanych. Ciepło które przenika przez dach od wewnątrz, ogrzewa śnieg zmniejszając jego ciężar.
+                    br/
+                    h3 Wartość charakterystyczna obciążenia śniegiem gruntu s  
+                        sub k
+                    h5.ml-4
+                        | s
+                        sub k
+                        |  odczytuje się dla konretnej strefy Polski z załącznika krajowego. Dla 1,3 i 5 strefy wartość obciążenia  zależy od wysokości nad poziomem morza.
+                    
+                    .row
+                        .col-6
+                            = image_tag  "sniegiem.png"
+                        h5.col-6  
+                            br/
+                            br/
+
+                            table.table.table-bordered
+                                tr
+                                    th Strefa
+                                    th 
+                                        | s
+                                        sub k
+                                        | , Kn/m
+                                        sup 2
+                                tr
+                                    td 1
+                                    td 0,007A - 1,4;  s
+                                        sub k
+                                        |  &ge; 0,7
+                                tr
+                                    td 2
+                                    td 0,9
+                                tr 
+                                    td 3
+                                    td 0,006A - 0,6;  s
+                                        sub k
+                                        |  &ge; 1,2
+                                tr
+                                    td 4
+                                    td 1,6
+                                tr
+                                    td 5
+                                    td 0,93exp(0,00134A);  s
+                                        sub k
+                                        |  &ge; 2,0
+
+
+                    h3 
+                        | Współczynnik &mu;
+                        sub i
+                    h5 
+                        ul
+                            li  
+                                |Współczynnik &mu; wyznacza się według normy w zależności od kształtu dachu, zależy od kąta nachylenia każdej z połaci (&alpha;
+                                sub 1
+                                | lub &alpha;
+                                sub 2
+                                | ) i odczytuje się go z tableli normy.
+                            li W przypadku bardziej skomplikowanych kształtów dachów należy uwzględnić również zwiększone obciążenie śniegiem w miejscach zagłębień (dachy wielopołaciowe, przylegające do wyższych budowli, zawierające przeszkody, czy attyki).        
+        .card
+            #headingTwo.card-header
+                button.btn.btn-link.collapsed aria-controls="collapseTwo" aria-expanded="false" data-target="#collapseTwo" data-toggle="collapse" type="button" 
+                    h2.text-dark
+                        strong Obciążalność wiatrem &dArr;
+            #collapseTwo.collapse aria-labelledby="headingTwo" data-parent="#accordionExample" 
+                .card-body
+                    .row
+                        .col-6
+                            h2
+                                strong Obciążalność wiatrem
+                            h3.ml-3 Norma PN-77/B-02011 "Obciążenia w obliczeniach statycznych" zawiera podstawowe informacje odnośnie obciążenie wiatrem.
+                            h5.mt-5 Polska podzielona jest na tak zwane strefy obciążenia wiatrem. Wszystkie obiekty budowlane, a nawet każde okno, musi wytrzymać obciażenie wiatrem odpowiadające danej strefie. Norma ta dba o nasze bezpieczeństwo, ale także wpływa znacznie na koszt wykonania konstrukcji. Im wyższa obciążalność wiatrem, tym mocniejsza musi być konstrukcja.
+                        .col-6
+                            = image_tag  "wiatrem.jpg", width: "100%"
+                    h3 Podstawowe informacje:
+                    h5
+                        ul 
+                            li wiatr - obciążenie zmienne umiejscowione
+                            li efekt oddziaływania wiatru zależy od rozmiarów kształtu i właściwości dynamicznych kontrukcji
+                            li 
+                                | wartość obciążenia charakterystycznego wyznacza się na podstawie wartości szczytowej ciśnienia prędkości wiatru (q
+                                sub p
+                                | ) na wysokości odniesienia w niezaburzonym przepływie powietrza oraz uwzględniając współczynniki sił, ciśnienia i konstrukcyjny (c
+                                sub
+                                | s c
+                                sub d
+                                | )
+                            li
+                                | wartość q
+                                sub p
+                                | zależy od miejscowych warunków klimatycznych, chropowatości i ukształtowania terenu oraz wysokości odniesienia
+                            li
+                                | obciążenie konstrukcji wiatrem wyznacza się uwzględniając ciśnienie zewnętrzne (w
+                                sub e
+                                | ) i wewnętrzne (w
+                                sub i
+                                | ), ciśnienie sumaryczne jest różnicą algebraiczną między tymi wartościami
+                    h3 Sytuacje obliczeniowe
+                    h5
+                        ul
+                            li oddziaływanie wiatru należy uwzględnić dla każdej sytuacji obliczeniowej
+                            li należy wziąć pod uwagę inne czynniki, które mogą zmienić oddziaływanie wiatru (np. śnieg, lód, zmiany konstrukcji w czasie wznoszenia, kształt, właściwości dynamiczne)
+                            li jeżeli zakłada się, że drzwi i okna pozostaną zamknięte podczas silnego wiatru, to skutek ich otwarcia należy traktować jako wyjątkową sytuację obliczeniową             
+                            li jeżeli konstrukcja jest podatna na zmęczenie pod wpływem wiatru to skutki te należy uwzględnić wg zał. B, C i E
+                        
+                    h3 Ciśnienie zewnętrzne i wewnętrzne
+                    h5  
+                        ul
+                            li parcie wiatru skierowane ku powierzchni ma wartość dodatnią, a ssanie skierowane od powierzchni – ujemną
+                            li we wnętrzu budynku może powstać zarówno dodatnie, jak i ujemne ciśnienie wiatru. Jest to uzależnione od umiejscowienia otworów w ścianie zewnętrznej w stosunku do kierunku wiatru
+                            li za otwory w budynkach uważa się małe otwory w ścianach (np. otwarte okna, wywietrzniki, kominy oraz ogólną przepuszczalność przegród, jak szczeliny wokół drzwi i okien)
+                            li przy założeniu, że okna i drzwi są zamknięte, typową przepuszczalność można przyjąć z zakresu od 0,01% do 0,1% pola przegrody
+                            li jeżeli przynajmniej na dwóch stronach budynku całkowite pole otworów wynosi więcej niż 30% powierzchni ściany, to obliczenia prowadzi się jak dla wiaty lub ściany wolno stojącej
+        .card
+            #headingThree.card-header
+                button.btn.btn-link.collapsed aria-controls="collapseThree" aria-expanded="false" data-target="#collapseThree" data-toggle="collapse" type="button" 
+                    h2.text-dark
+                        strong Skraplanie się pary wodnej &dArr;
+            #collapseThree.collapse aria-labelledby="headingThree" data-parent="#accordionExample" 
+                .card-body
+                    h5
+                        ul  
+                            li Skraplanie się pary wodnej, nazywane inaczej punktem rosy, dotyczy obiektów, które nie są izolowane ani ogrzewane – dotyczy to również namiotów halowych. Wspomniane zjawisko jest efektem kontaktu ciepłego powietrza jakie występuje w środku hali z zimną powierzchnią plandeki i stalowych profili. Wilgoć zawarta w powietrzu skrapla się wówczas osiadając na wewnętrznej powierzchni pokrycia dachowego. Jakie są konsekwencje tego zjawiska? W sytuacji kiedy w namiocie przechowywane są produkty wrażliwe na wilgoć, mogą one ulec uszkodzeniu, w związku z tym warto zadbać o odpowiednie zabezpieczenia, które pomogą uchronić namioty przed efektem skraplania.
+                            li Istnieje kilka sposobów na uniknięcie efektu skraplania, które producenci namiotów stosują, by zapobiec kondensacji pary wodnej wewnątrz konstrukcji. Jednym z nich jest podwójna plandeka sufitowa, która należy do najpopularniejszych rozwiązań w tym obszarze. Jak działa taka plandeka? Kiedy pojawia się skroplina, spływa ona po powierzchni drugiej plandeki i w ten sposób problem jest eliminowany. W powszechnym użyciu są również plandeki pompowane, których mechanizm podtrzymuje stałe ciśnienie w komorze między warstwami dachowymi – wymaga to jednak stałego doprowadzania energii elektrycznej. Innym sposobem jest stosowanie okienek wentylacyjnych, które spychają ciepłe powietrze z góry na dół, co zmniejsza efekt skraplania, ale go nie eliminuje.
+        .card
+            #headingFour.card-header
+                button.btn.btn-link.collapsed aria-controls="collapseFour" aria-expanded="false" data-target="#collapseFour" data-toggle="collapse" type="button" 
+                    h2.text-dark
+                        strong Korozja a cynkowanie &dArr;
+            #collapseFour.collapse aria-labelledby="headingFour" data-parent="#accordionExample" 
+                .card-body
+                    h5.text-danger 
+                        strong Cynkowanie to obecnie jeden z najskuteczniejszych sposobów ochrony elementów metalowych przed rdzą.
+                    h5 Powłoka cynkowa stanowi bardzo trwałą i skuteczną barierę oddzielającą stal od środowiska korozyjnego. Istnieje kilka metod technologicznych nakładania cynku, spośród których cynkowanie ogniowe jest najbardziej uniwersalne, bowiem sprawdza się zarówno w przypadku drobnych elementów, jak również dużych konstrukcji stalowych.
+                    h5 Proces cynkowania ogniowego składa się z kilku etapów wstępnych (I-V), poprzedzających bezpośrednie zanurzenie elementu stalowego w ciekłym cynku (VI), wskutek czego powstaje mechanicznie trwała i nieprzepuszczalna powłoka cynkowa chroniąca materiał stalowy przed korozją i tym samym zapobiegająca niszczeniu stali.
+                    br/
+                    h3 Etapy procesu cynkowania:
+                    h5  
+                        ol  
+                            li 
+                                strong Obróbka strumieniowo-ścierna:
+                                br/
+                                | Pierwszy etap procesu polega na mechanicznym usunięciu niejednorodności przylegających do powierzchni cynkowanego przedmiotu. Zanieczyszczenia tj.: piasek, rdza, zgorzelina, żużel czy pozostałości starej powłoki antykorozyjnej, usuwane są metodą obróbki strumieniowo-ściernej. Podczas obróbki strumień sprężonego powietrza wzbogacony w materiał ścierny (tj.: staliwo, żeliwo, ziarna cięte z drutu stalowego), kierowany jest na powierzchnię poddaną mechanicznemu czyszczeniu. W zależności od rodzaju zastosowanego materiału ściernego i prędkości, z jaką uderza on w przedmiot, uzyskuje się efekt wygładzenia, utwardzenia, nagrzewania, deformacji bądź umocnienia struktury powierzchniowej. Obróbka strumieniowo-ścierna jest metodą ekonomiczną i bezpieczną dla środowiska. Innym przykładem przygotowania elementów stalowych o niewielkich rozmiarach do pokrycia powłoką cynkową jest obróbka wibrościerna. Terminem tym określa się mechaniczne wygładzenie lub polerowanie powierzchni, usuwanie produktów korozji gazowej i rdzy. Procesy te przeprowadza się w wygładzarkach wibracyjnych, na mokro z dodatkiem substancji chemicznych, środków ściernych i żywic syntetycznych o zróżnicowanych kształtach i efektywności ścierania. Specyficzną odmianą obróbki ściernej jest bębnowanie, w którym oddziaływanie materiału ściernego na powierzchnię stalową zachodzi w urządzeniu mieszającym podczas ruchów rotacyjnych bębna.
+                            li 
+                                strong Odtłuszczanie:
+                                br/
+                                | Elementy stali przed zanurzeniem w kąpieli cynkowej powinny być wolne od tłuszczu, substancji woskowatych i oleju, które uniemożliwiają reakcję żelaza z cynkiem. Etap odtłuszczania ma na celu uzyskanie chemicznie czystej powierzchni, na której powstanie stop stali z cynkiem. Czyszczące i odtłuszczające właściwości posiada wiele nieorganicznych roztworów o odczynie alkalicznym, kwaśnym i neutralnym.
+                            li 
+                                strong Trawienie:
+                                br/
+                                | Pozwala ono na skuteczne usunięcie substancji niemetalicznych (tj.: rdza, zgorzelina i inne produkty korozji) powstałych podczas walcowania i wyżarzania elementów konstrukcyjnych. Najbardziej popularnym sposobem trawienia jest kąpiel w kwasie solnym. W wyjątkowych sytuacjach, kiedy usunięcie piasku z elementów żeliwnych poprzez trawienie w kwasie chlorowodorowym nie przynosi oczekiwanych efektów, można zastosować roztwór kwasu fluorowodorowego, bądź mieszaninę kwasów chlorowodorowego i fluorowodorowego.
+                            li 
+                                strong Topnikowanie:
+                                br/
+                                | Wytrawiona w kwasie stal przechodzi do kolejnej fazy zwanej topnikowaniem. Etap ten polega na zanurzeniu elementów stalowych w roztworze wodnym chlorku cynku i chlorku amonu (ZnCl2/NH4Cl), celem zapewnienia prawidłowego przebiegu reakcji chemicznych zachodzących podczas cynkowania. W metodzie suchej chlorek amonu stanowi 15% roztworu, natomiast w mokrej sole występują w proporcji 1:3. Zadaniem topników jest oczyszczenie powierzchni stalowych ze śladowych ilości tlenków, co skutecznie minimalizuje ryzyko utlenienia stali przed jej wprowadzeniem do płynnej kąpieli cynkowej.
+                            li 
+                                strong Suszenie:
+                                br/
+                                | Po obróbce w kąpieli topnikowej elementy stalowe zostają poddane suszeniu w temperaturze 120°C-150°C. Jest to etap wymagający wysokiej precyzji i szczególnej ostrożności. Ważne jest stałe kontrolowanie temperatury układu. Gwałtowna zmiana warunków termicznych może wywołać zapalenie substancji chemicznych wchodzących w skład topnika i wpłynąć na zmniejszenie skuteczności obróbki. Suszenie powinno być przeprowadzone sprawnie i szybko, by zapobiec trawieniu żelaza i powstawaniu związków żelazowych wpływających niekorzystnie na procesy z udziałem topników.
+                            li 
+                                strong Cynkowanie:
+                                br/
+                                | Ostatni etap procesu cynkowania ogniowego polega na zanurzeniu uprzednio przygotowanego podłoża stalowego w kąpieli stopionego cynku o temperaturze 445°C-455°C. W tych warunkach cynk i żelazo ulegają bardzo szybkiej reakcji chemicznej, co skraca czas zanurzenia powierzchni stalowych w ciekłym cynku do kilku minut. Na drodze dyfuzji, czyli przenikania atomów cynku w zewnętrzną warstwę stali, powstaje powierzchniowy stop żelazo-cynk zawierający różny stosunek obydwu składników. Ogniowa powłoka cynkowa po ostudzeniu w wodzie cechuje się wysoką odpornością mechaniczną i estetycznym wyglądem.
 
 
 
-    br/
-    .row
-        .col-3
-            h5
-                strong Obciążalność wiatrem
-            h6 Norma PN-77/B-02011 "Obciążenia w obliczeniach statycznych" zawiera podstawowe informacje odnośnie obciążenie wiatrem.
-            h6 Polska podzielona jest na tak zwane strefy obciążenia wiatrem. Wszystkie obiekty budowlane, a nawet każde okno, musi wytrzymać obciażenie wiatrem odpowiadające danej strefie. Norma ta dba o nasze bezpieczeństwo, ale także wpływa znacznie na koszt wykonania konstrukcji. Im wyższa obciążalność wiatrem, tym mocniejsza musi być konstrukcja.
-        .col-9.text-center
-            = image_tag  "wiatrem.jpg"
-            
-    br/
-    .col-12
-        h4
-        strong Skraplanie się pary wodnej
-        h6 Skraplanie się pary wodnej, nazywane inaczej punktem rosy, dotyczy obiektów, które nie są izolowane ani ogrzewane – dotyczy to również namiotów halowych. Wspomniane zjawisko jest efektem kontaktu ciepłego powietrza jakie występuje w środku hali z zimną powierzchnią plandeki i stalowych profili. Wilgoć zawarta w powietrzu skrapla się wówczas osiadając na wewnętrznej powierzchni pokrycia dachowego. Jakie są konsekwencje tego zjawiska? W sytuacji kiedy w namiocie przechowywane są produkty wrażliwe na wilgoć, mogą one ulec uszkodzeniu, w związku z tym warto zadbać o odpowiednie zabezpieczenia, które pomogą uchronić namioty przed efektem skraplania.
-        h6 Istnieje kilka sposobów na uniknięcie efektu skraplania, które producenci namiotów stosują, by zapobiec kondensacji pary wodnej wewnątrz konstrukcji. Jednym z nich jest podwójna plandeka sufitowa, która należy do najpopularniejszych rozwiązań w tym obszarze. Jak działa taka plandeka? Kiedy pojawia się skroplina, spływa ona po powierzchni drugiej plandeki i w ten sposób problem jest eliminowany. W powszechnym użyciu są również plandeki pompowane, których mechanizm podtrzymuje stałe ciśnienie w komorze między warstwami dachowymi – wymaga to jednak stałego doprowadzania energii elektrycznej. Innym sposobem jest stosowanie okienek wentylacyjnych, które spychają ciepłe powietrze z góry na dół, co zmniejsza efekt skraplania, ale go nie eliminuje.
 
-    br/
-    h4
-        strong Korozja a cynkowanie
-    h6 Cynkowanie to obecnie jeden z najskuteczniejszych sposobów ochrony elementów metalowych przed rdzą. Istnieją różne rodzaje cynkowania. Każdy z nich ma swoje plusy i minusy.
-    h6 Proces cynkowania polega na nałożeniu warstwy cynku na elementy metalowe, które łatwo ulegają korozji. Proces cynkowana galwanicznego wykorzystuje do tego celu specjalne roztwory elektrolitowe, w których zanurzany jest element metalowy. Następnie roztwór wraz z elementem podłączany jest do prądu. W wyniku zachodzących reakcji warstwa cynku trwale łączy się z powierzchnią metalu.Inaczej wygląda proces cynkowania ogniowego, który polega na zanurzeniu metalowego elementu w rozgrzanym do ok. 450 °C cynku. Pod wpływem temperatury cynk również trwale przylega do powierzchni elementu metalowego.  
-    h6 Cynkowanie metali podatnych na rdzewienie ma na celu ich ochronę przed korodowaniem, a tym samym przedłużana jest żywotność stalowych elementów. W tym wypadku naturalne wydaje się, że warstwa ochronna nie poddaje się korodowaniu, skoro ma przed nim zabezpieczać, tymczasem jest zupełnie inaczej.
+        .card
+            #headingFive.card-header
+                button.btn.btn-link.collapsed aria-controls="collapseFive" aria-expanded="false" data-target="#collapseFive" data-toggle="collapse" type="button" 
+                    h2.text-dark
+                        strong Stal kontra aluminium &dArr;
+            #collapseFive.collapse aria-labelledby="headingFive" data-parent="#accordionExample" 
+                .card-body
+                    h5.indent Stal kontra aluminium to tak naprawdę kwestia wytrzymałości w stosunku do masy, która ustępuje miejsca wspólnym nieporozumieniom, nawet wśród inżynierów. Podczas gdy fakty są takie, że niektóre stopy aluminium są mocniejsze niż niektóre stopy stali, jest tylko częściową prawdą, że stopy aluminium są silniejsze niż stal. Rozumiemy tę różnicę między stalą a aluminium przez porównanie oparte na wytrzymałości i wadze, sztywności i plonowaniu oraz właściwościach magnetycznych i niemagnetycznych.
+                    h5.indent Jak wiadomo, wytrzymałość odnosi się do maksymalnego obciążenia, jakie może wytrzymać materiał bez zginania i utraty kształtu, a sztywność odnosi się do właściwości plastycznych materiału i do tego, ile może zginać pod obciążeniem lub przy stosowaniu nacisku. Parametr określający sztywność nazywany jest modułem sprężystości. Względna sztywność stali w stosunku do aluminium nie ma przewagi w zakresie sztywności względem siebie, ponieważ oba materiały mogą wytrzymać i wytrzymują ekstremalne ciśnienie i masę ładunku. Aluminium bije stal, ponieważ jego gęstość zginania wynosi około 1/3 gęstości stali, a zaleta grubości przesuwa się o 1/3 wytrzymałości, czyniąc aluminium bardziej odpornym na wgniecenia niż stal o tej samej wadze. Jedną różnicą, jaką ma stal w porównaniu z aluminium, jest to, że po wielokrotnych obciążeniach aluminium ulega zmęczeniu. Stal ma nieokreśloną trwałość zmęczeniową, co oznacza, że ​​ma wystarczającą wytrzymałość, aby wytrzymać powtarzające się cykle obciążenia, a zatem trwa dłużej lub jest zachowywana. Stal jest cięższa niż aluminium, ponieważ stal jest około trzy razy cięższa dla tej samej długości aluminium.
+                    h5.indent Wytrzymałość lub wytrzymałość na rozciąganie wysokogatunkowego aluminium jest w takim samym stosunku jak stal wysokiej jakości. Jeśli porównamy stal i aluminium używane jako materiał konstrukcyjny, ciężar właściwy dla stali nierdzewnej wynosi 7800 ton / m, a aluminium 2700 kg / m3. Stal w porównaniu z aluminium jest nisko technologiczna i lekko niszcząca, ponieważ stal będzie iskra, jeśli użyjesz szlifierki kątowej i krótko dotkniesz metalu. Po uderzeniu w bity stali iskrzy się, a aluminium nie iskrzy. Tam gdzie ugięcie jest ważne, aluminium ma krawędź nad stalą. Stal ma więcej właściwości odbicia niż aluminium. Chociaż możliwe jest ugięcie, preferuje się stal, ponieważ łatwiej ją spawać.
+                    h5.indent Aluminium jest niemagnetyczne w porównaniu ze stalą, jednak niektóre rodzaje stopów stali są również niemagnetyczne.
