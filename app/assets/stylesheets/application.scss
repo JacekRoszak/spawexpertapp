@@ -105,15 +105,6 @@
   height: 70vh;
 }
 
-  .card-inner {
-    transition: all 0.5s ease-in-out;
-  }
-
-
-  .card-inner:hover{
-    z-index: 1000 !important;
-    transform: scale(1.5);
-  }
 
   .indent{
     text-indent: 20px;
@@ -222,7 +213,19 @@ p{
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 100% !important;
-    }}
+    }
+    .card-inner {
+      transition: all 0.5s ease-in-out;
+    }
+  
+  
+    .card-inner:hover{
+      z-index: 1000 !important;
+      transform: scale(1.5);
+    }
+  
+  
+  }
 
   @media (min-width: 1200px){
     .col-lg-6 {
