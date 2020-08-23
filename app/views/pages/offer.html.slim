@@ -26,12 +26,6 @@ main.container
           h3.mb-2 Jeździeckie
           = image_tag  "bet.png", class: "height: auto;"
 
-
-
-
-
-
-
   section
     .mt-5.text-center.p-4.bg-dark.text-white
       .container#carousel-container
@@ -43,11 +37,9 @@ main.container
               .element Montaż trwa średnio od 2 - 4 dni. W zależności od wymiarów.
               .element Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
 
-
-
     .container
       .col-lg-6.mt-5
-        #carouselExampleControls.carousel.slide data-ride="carousel" 
+        #carouselExampleControls1.carousel.slide data-ride="carousel" 
           .carousel-inner.my-carousel
             .carousel-item.active
               = image_tag  "slide1.jpg", class: "d-block w-100" 
@@ -61,10 +53,10 @@ main.container
               = image_tag  "slide5.jpg", class: "d-block w-100" 
             .carousel-item
               = image_tag  "slide6.jpg", class: "d-block w-100" 
-          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls1" role="button" 
             span.carousel-control-prev-icon aria-hidden="true" 
             span.sr-only Poprzednie
-          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls1" role="button" 
             span.carousel-control-next-icon aria-hidden="true" 
             span.sr-only Następne
 
@@ -91,24 +83,20 @@ main.container
         li innym trwałym podłożu 
 
       .col-lg-6.mt-5
-        #carouselExampleControls.carousel.slide data-ride="carousel" 
+        #carouselExampleControls2.carousel.slide data-ride="carousel" 
           .carousel-inner.my-carousel
             .carousel-item.active
-              = image_tag  "slide1.jpg", class: "d-block w-100" 
+              = image_tag  "szklanka.jpg", class: "d-block w-100" 
             .carousel-item
-              = image_tag  "slide2.jpg", class: "d-block w-100" 
+              = image_tag  "plyta.jpg", class: "d-block w-100" 
             .carousel-item
-              = image_tag  "slide3.jpg", class: "d-block w-100" 
+              = image_tag  "wieniec.jpg", class: "d-block w-100" 
             .carousel-item
-              = image_tag  "slide4.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide5.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide6.jpg", class: "d-block w-100" 
-          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+              = image_tag  "jumbo.png", class: "d-block w-100" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls2" role="button" 
             span.carousel-control-prev-icon aria-hidden="true" 
             span.sr-only Poprzednie
-          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls2" role="button" 
             span.carousel-control-next-icon aria-hidden="true" 
             span.sr-only Następne
 
@@ -123,38 +111,22 @@ main.container
               .element Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
 
     .container
-      .col-lg-6.mt-5
-        #carouselExampleControls.carousel.slide data-ride="carousel" 
-          .carousel-inner.my-carousel
-            .carousel-item.active
-              = image_tag  "slide1.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide2.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide3.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide4.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide5.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide6.jpg", class: "d-block w-100" 
-          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-            span.carousel-control-prev-icon aria-hidden="true" 
-            span.sr-only Poprzednie
-          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-            span.carousel-control-next-icon aria-hidden="true" 
-            span.sr-only Następne
 
-      .col-lg-6.mt-5.p-6
-        h2 
-          strong  Boki hali
-        li pcv (plandekowy)
-        li blacha trapezowa
-        li płyta warstwowa
-        br/
-        | Konstrukcja może być
-        li cynkowana 
-        li malowana
+      h2.text-center 
+        strong  Boczne ściany wykonujemy z:
+      .text-center
+        .d-inline-block.m-3.text-center#bokihali
+          h3.mb-2 PCV (plandeka)
+          = image_tag  "plandeka.jpg"
+        .d-inline-block.m-3.text-center#bokihali
+          h3.mb-2 Blacha trapezowa
+          = image_tag  "trapez.png"
+        .d-inline-block.m-3.text-center#bokihali
+          h3.mb-2 Płyta warstwowa
+          = image_tag  "plytawarstwowa.jpg"
+
+
+        
 
   section
     .mt-5.text-center.p-0.bg-dark.text-white
@@ -178,7 +150,7 @@ main.container
           li fartuchy na dole hali
       
       .col-lg-6.mt-5
-        #carouselExampleControls.carousel.slide data-ride="carousel" 
+        #carouselExampleControls4.carousel.slide data-ride="carousel" 
           .carousel-inner.my-carousel
             .carousel-item.active
               = image_tag  "slide1.jpg", class: "d-block w-100" 
@@ -192,10 +164,10 @@ main.container
               = image_tag  "slide5.jpg", class: "d-block w-100" 
             .carousel-item
               = image_tag  "slide6.jpg", class: "d-block w-100" 
-          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls4" role="button" 
             span.carousel-control-prev-icon aria-hidden="true" 
             span.sr-only Poprzednie
-          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls4" role="button" 
             span.carousel-control-next-icon aria-hidden="true" 
             span.sr-only Następne
 
