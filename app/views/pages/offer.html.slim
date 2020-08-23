@@ -1,32 +1,30 @@
 main.container
-  .col-md-12.mt-5.text-center.p-4
-    h1#head1 
-      | Wykonujemy 
-      strong hale namiotowe 
-      | według życzenia klienta. Dowolne wymiary i materiały, przy minimalnej powierzchni 96m <sup>2
+  section 
+    .mt-5.text-center.p-4
+      h1#head1 
+        | Wykonujemy 
+        strong hale namiotowe 
+        | według życzenia klienta. Dowolne wymiary i materiały, przy minimalnej powierzchni 96m <sup>2
 
-  .col-md-12.mt-5
-    nav.navbar.navbar-expand-lg.navbar-light.my-nav.mt-5.p-0
-      .collapse.navbar-collapse.mx-auto.mb-auto.p-0    
-        ul.navbar-nav.mx-auto.text-center.mb-4.p-0
-          li.nav-item.btn-lg
-              p#head.card-text.mb-2 Magazynowe
-              = image_tag  "inventory.png", class: "height: auto;"
-          li.nav-item.btn-lg
-              p#head.card-tex.mb-2 Przemysłowe
-              = image_tag  "factory.png", class: "height: auto;"
-          li.nav-item.btn-lg
-              p#head.card-text.mb-2 Sportowe
-              = image_tag  "football-player.png", class: "height: auto;"
-          li.nav-item.btn-lg
-              p#head.card-text.mb-2 Imprezowe
-              = image_tag  "cheers.png", class: "height: auto;"
-          li.nav-item.btn-lg
-              p#head.card-text.mb-2 Rolnicze
-              = image_tag  "tractor.png", class: "height: auto;"
-          li.nav-item.btn-lg
-              p#head.card-text.mb-2 Jeździeckie
-              = image_tag  "bet.png", class: "height: auto;"
+    .text-center.mt-5
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Magazynowe
+          = image_tag  "inventory.png", class: "height: auto;"
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Przemysłowe
+          = image_tag  "factory.png", class: "height: auto;"
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Sportowe
+          = image_tag  "football-player.png", class: "height: auto;"
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Imprezowe
+          = image_tag  "cheers.png", class: "height: auto;"
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Rolnicze
+          = image_tag  "tractor.png", class: "height: auto;"
+      .d-inline-block.m-3.text-center
+          h3.mb-2 Jeździeckie
+          = image_tag  "bet.png", class: "height: auto;"
 
 
 
@@ -34,168 +32,170 @@ main.container
 
 
 
-section
-  .col-md-12.mt-5.text-center.p-4.bg-dark.text-white
-    .container#carousel-container
-      .text-container
-        .carousel-text
-          .inner
-            .element Montaż u klienta nawet w 3 tygodnie od zamówienia! 
-            .element Hale są objęte gwarancją.
-            .element Montaż trwa średnio od 2 - 4 dni. W zależności od wymiarów.
-            .element Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
+  section
+    .mt-5.text-center.p-4.bg-dark.text-white
+      .container#carousel-container
+        .text-container
+          .carousel-text
+            .inner
+              .element Montaż u klienta nawet w 3 tygodnie od zamówienia! 
+              .element Hale są objęte gwarancją.
+              .element Montaż trwa średnio od 2 - 4 dni. W zależności od wymiarów.
+              .element Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
 
 
 
-  .container
-    .col-md-6.mt-5.rounded
-      #carouselExampleControls.carousel.slide data-ride="carousel" 
-        .carousel-inner.my-carousel
-          .carousel-item.active
-            = image_tag  "slide1.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide2.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide3.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide4.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide5.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide6.jpg", class: "d-block w-100" 
-        a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-          span.carousel-control-prev-icon aria-hidden="true" 
-          span.sr-only Poprzednie
-        a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-          span.carousel-control-next-icon aria-hidden="true" 
-          span.sr-only Następne
-
-
-    .col-md-6.mt-5.p-6
-      h2 
-        strong Halę można pokryć:
-      li materiałem namiotowym (plandeką)
-      li blachą trapezową
-      li płytą warstwową
-      li termoizolacyjnym dachem pompowanym
-
-
-  .container
-    .col-md-6.mt-5.p-6
-      h2 
-        strong Posadowienie:
-      | Mocując hale wykorzystując kotwy chemiczne. 
-      | Posadowienie na: 
-      li szklankach fundamentowych
-      li płycie fundamentowej
-      li wieńcu 
-      li płytach typu jumbo 
-      li innym trwałym podłożu 
-
-    .col-md-6.mt-5
-      #carouselExampleControls.carousel.slide data-ride="carousel" 
-        .carousel-inner.my-carousel
-          .carousel-item.active
-            = image_tag  "slide1.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide2.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide3.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide4.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide5.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide6.jpg", class: "d-block w-100" 
-        a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-          span.carousel-control-prev-icon aria-hidden="true" 
-          span.sr-only Poprzednie
-        a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-          span.carousel-control-next-icon aria-hidden="true" 
-          span.sr-only Następne
-
-section
-  .col-md-12.mt-5.text-center.p-4.bg-dark.text-white
-    .container#carousel-container
-      .text-container
-        .carousel-text
-          .inner
-            .element Hale można skonfigurować według własnych potrzeb. 
-            .element Bramy i drzwi techniczne w dowolnym miejscu. 
-            .element Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
-
-  .container
-    .col-md-6.mt-5
-      #carouselExampleControls.carousel.slide data-ride="carousel" 
-        .carousel-inner.my-carousel
-          .carousel-item.active
-            = image_tag  "slide1.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide2.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide3.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide4.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide5.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide6.jpg", class: "d-block w-100" 
-        a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-          span.carousel-control-prev-icon aria-hidden="true" 
-          span.sr-only Poprzednie
-        a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-          span.carousel-control-next-icon aria-hidden="true" 
-          span.sr-only Następne
-
-    .col-md-6.mt-5.p-6
-      h2 
-        strong  Boki hali
-      li pcv (plandekowy)
-      li blacha trapezowa
-      li płyta warstwowa
-      br/
-      | Konstrukcja może być
-      li cynkowana 
-      li malowana
-
-section
-  .col-md-12.mt-5.text-center.p-0.bg-dark.text-white
     .container
-        p#head.m-3 Wykorzystujemy atestowaną stal konstrukcyjną gatunku St3s lub wyższą, zabezpieczoną poprzez cynkowanie ogniowe.
+      .col-lg-6.mt-5
+        #carouselExampleControls.carousel.slide data-ride="carousel" 
+          .carousel-inner.my-carousel
+            .carousel-item.active
+              = image_tag  "slide1.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide2.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide3.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide4.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide5.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide6.jpg", class: "d-block w-100" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+            span.carousel-control-prev-icon aria-hidden="true" 
+            span.sr-only Poprzednie
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+            span.carousel-control-next-icon aria-hidden="true" 
+            span.sr-only Następne
 
-  .container
-    .col-md-6.mt-5
-      #carouselExampleControls.carousel.slide data-ride="carousel" 
-        .carousel-inner.my-carousel
-          .carousel-item.active
-            = image_tag  "slide1.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide2.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide3.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide4.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide5.jpg", class: "d-block w-100" 
-          .carousel-item
-            = image_tag  "slide6.jpg", class: "d-block w-100" 
-        a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
-          span.carousel-control-prev-icon aria-hidden="true" 
-          span.sr-only Poprzednie
-        a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
-          span.carousel-control-next-icon aria-hidden="true" 
-          span.sr-only Następne
 
-    .col-md-6.mt-2.p-3
-      h2 
-        strong Opcje dodatkowe:
-      ul
-        li świetliki dachowe
-        li dodatkowe otwory wentylacyjne
-        li bramy
-        li drzwi techniczne 
-        li grafiki
-        li rynny
-        li powłoki anty-kondensacyjne 
-        li powłoki przeciw-skraplające
-        li fartuchy na dole hali
+      .col-lg-6.mt-5.p-6
+        h2 
+          strong Halę można pokryć:
+        li materiałem namiotowym (plandeką)
+        li blachą trapezową
+        li płytą warstwową
+        li termoizolacyjnym dachem pompowanym
+
+
+    .container
+      .col-lg-6.mt-5.p-6
+        h2 
+          strong Posadowienie:
+        | Mocując hale wykorzystując kotwy chemiczne. 
+        | Posadowienie na: 
+        li szklankach fundamentowych
+        li płycie fundamentowej
+        li wieńcu 
+        li płytach typu jumbo 
+        li innym trwałym podłożu 
+
+      .col-lg-6.mt-5
+        #carouselExampleControls.carousel.slide data-ride="carousel" 
+          .carousel-inner.my-carousel
+            .carousel-item.active
+              = image_tag  "slide1.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide2.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide3.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide4.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide5.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide6.jpg", class: "d-block w-100" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+            span.carousel-control-prev-icon aria-hidden="true" 
+            span.sr-only Poprzednie
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+            span.carousel-control-next-icon aria-hidden="true" 
+            span.sr-only Następne
+
+  section
+    .mt-5.text-center.p-4.bg-dark.text-white
+      .container#carousel-container
+        .text-container
+          .carousel-text
+            .inner
+              .element Hale można skonfigurować według własnych potrzeb. 
+              .element Bramy i drzwi techniczne w dowolnym miejscu. 
+              .element Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
+
+    .container
+      .col-lg-6.mt-5
+        #carouselExampleControls.carousel.slide data-ride="carousel" 
+          .carousel-inner.my-carousel
+            .carousel-item.active
+              = image_tag  "slide1.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide2.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide3.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide4.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide5.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide6.jpg", class: "d-block w-100" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+            span.carousel-control-prev-icon aria-hidden="true" 
+            span.sr-only Poprzednie
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+            span.carousel-control-next-icon aria-hidden="true" 
+            span.sr-only Następne
+
+      .col-lg-6.mt-5.p-6
+        h2 
+          strong  Boki hali
+        li pcv (plandekowy)
+        li blacha trapezowa
+        li płyta warstwowa
+        br/
+        | Konstrukcja może być
+        li cynkowana 
+        li malowana
+
+  section
+    .mt-5.text-center.p-0.bg-dark.text-white
+      .container
+          p#head.m-3 Wykorzystujemy atestowaną stal konstrukcyjną gatunku St3s lub wyższą, zabezpieczoną poprzez cynkowanie ogniowe.
+
+    .container
+      
+      .col-lg-6.mt-2.p-3
+        h2 
+          strong Opcje dodatkowe:
+        ul
+          li świetliki dachowe
+          li dodatkowe otwory wentylacyjne
+          li bramy
+          li drzwi techniczne 
+          li grafiki
+          li rynny
+          li powłoki anty-kondensacyjne 
+          li powłoki przeciw-skraplające
+          li fartuchy na dole hali
+      
+      .col-lg-6.mt-5
+        #carouselExampleControls.carousel.slide data-ride="carousel" 
+          .carousel-inner.my-carousel
+            .carousel-item.active
+              = image_tag  "slide1.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide2.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide3.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide4.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide5.jpg", class: "d-block w-100" 
+            .carousel-item
+              = image_tag  "slide6.jpg", class: "d-block w-100" 
+          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls" role="button" 
+            span.carousel-control-prev-icon aria-hidden="true" 
+            span.sr-only Poprzednie
+          a.carousel-control-next data-slide="next" href="#carouselExampleControls" role="button" 
+            span.carousel-control-next-icon aria-hidden="true" 
+            span.sr-only Następne
+
