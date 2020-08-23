@@ -39,9 +39,7 @@
   float: none;
   margin: 0;
 }
-.navbar-expand-lg .navbar-toggler {
-  display: none;
-}
+.navbar-expand-lg .navbar-toggler { display: none; }
 }
 
 @media (min-width: 980px){
@@ -57,19 +55,13 @@
  
 }
 
-#bokihali img{
-  width: 20vw;
-  height: auto;
-}
 
-.btn:hover{
-  text-decoration: none !important;
+.btn:hover{   text-decoration: none !important; }
+#head1{       font-size: 36px !important; }
+.text-dark {  color: rgb(53, 53, 53) !important; }
+.indent{      text-indent: 20px; }
 
-}
 
-#head1{
-  font-size: 36px !important;
-}
 
 .navbar-light .navbar-toggler-icon{
   background-size: 60px 60px;
@@ -94,10 +86,6 @@
 
 
 
-.text-dark {
-  color: rgb(53, 53, 53) !important;
-
-}
 
 .btn-lg a:hover{
   color: black;
@@ -110,9 +98,6 @@
 }
 
 
-  .indent{
-    text-indent: 20px;
-  }
 
   h1{
     font-size: 48px !important;
@@ -128,32 +113,19 @@
     font-size: 30px !important;
     margin-top: 30px;
   }
-  h4{
-    font-size: 26px !important;
-  }
-  h5{
-    font-size: 20px !important;
-  }
+  h4{ font-size: 26px !important;   }
+  h5{ font-size: 20px !important;   }
   h6{
     text-indent: 30px;
     font-size: 16px !important;
   }
 
-  .law-nav{
-    font-size: 18px !important;
-  }
-  .law-nav p{
-    font-size: 26px !important;
-  }
+  .law-nav{ font-size: 18px !important;   }
+  .law-nav p{ font-size: 26px !important;   }
 
-  .law-nav .nav-sm-item{
-    font-size: 16px !important;
-    
-  }
+  .law-nav .nav-sm-item{ font-size: 16px !important; }
 
-  .law-nav a{
-    color: black !important;
-  }
+  .law-nav a{ color: black !important; }
 
  body{
    padding-top: 0px !important;
@@ -164,9 +136,7 @@
    overflow: hidden;
 }
  
-.my-carousel{
-  border-radius: 20px !important;
-}
+.my-carousel{ border-radius: 20px !important; }
 
 .my-nav{
   font-size: 56px;
@@ -174,17 +144,11 @@
   padding: 0px;
 }
 
-.card-title{
-  font-size: 20px !important;
-}
+.card-title{ font-size: 20px !important; }
 
-.card-text{
-  font-size: 14px !important;
-}
+.card-text{ font-size: 14px !important; }
 
-p{
-  margin-bottom: 0px !important;
-}
+p{ margin-bottom: 0px !important; }
 
 #main_container{
   font-size: 28px ;
@@ -195,102 +159,85 @@ p{
   margin-right: 0 !important;
 }
 
-#head{
-  font-size: 28px !important;
+.logo2{
+  width: 100%;
+  min-height: 150px;
+ background-image: asset_url('1.png');
+ background-size: contain;
+ background-position: center;
+ background-repeat: no-repeat;
+ margin-left: auto;
+ margin-right: auto;
 }
+
+#head{ font-size: 28px !important; }
+
+@media (max-width: 991px) {
+  #bokihali img{
+    width: 60vw;
+    height: auto;
+  }
+
+}
+
 
 @media (min-width: 992px) {
-  .p-6{
-    padding: 50px !important;
-  }
-  .card-div {
-    width: 28vh !important;
-  }
-  
+      .p-6{         padding: 50px !important;           }
+      .card-div {   width: 28vh !important;             }
+      .card-inner { transition: all 0.5s ease-in-out;   }
 
-
-}
+      #bokihali img{
+        width: 20vw;
+        height: auto;
+      }
       
+      .col-lg-6 {
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          max-width: 100% !important;
+      }
 
-  @media (min-width: 992px) {
-    .col-lg-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 100% !important;
-    }
-    .card-inner {
-      transition: all 0.5s ease-in-out;
-    }
-  
-  
-    .card-inner:hover{
-      z-index: 1000 !important;
-      transform: scale(1.5);
-    }
-  
+      .card-inner:hover{
+        z-index: 1000 !important;
+        transform: scale(1.5);
+      }
+      
   
   }
 
-  @media (min-width: 1200px){
-    .col-lg-6 {
-      width: 50% !important;
-    }}
 
- .logo2{
-   width: 100%;
-   min-height: 150px;
-  background-image: asset_url('1.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 @media (min-width: 1200px){
-.carousel-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  margin-bottom: 30px;
-}
+      .carousel-container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        margin-bottom: 30px;
+      }
 
-.carousel-text {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: top;
-  height: 48px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 50px !important;
-}
-.inner {
-    animation: scroll 8s ease-in-out infinite;
-}
-.element {
-  text-shadow: 0px 2px 2px #8b8b8b;
-}
+      .carousel-text {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        height: 48px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px !important;
+      }
+      .inner {    animation: scroll 8s ease-in-out infinite;  }
+      .element {  text-shadow: 0px 2px 2px #8b8b8b;         }
+      .col-lg-6 { width: 50% !important;    }
 
-@keyframes scroll {
-  0%, 20% {
-		transform: translateY(0);
-	}
-	25%,45% {
-		transform: translateY(-50px);
-	}
-	50%,70% {
-		transform: translateY(-100px);
-	}
-	75%,95% {
-		transform: translateY(-150px);
-	}
-	100% {
-		transform: translateY(-200px);
-	}
-}
+      @keyframes scroll {
+            0%, 20% {   transform: translateY(0);     }
+            25%,45% {   transform: translateY(-50px); }
+            50%,70% {   transform: translateY(-100px);}
+            75%,95% {   transform: translateY(-150px);}
+            100% {      transform: translateY(-200px);}
+      }
 
 }
 
