@@ -1,31 +1,33 @@
 main.container
 
+    h1 Czynniki atmosferyczne
+
     #accordionExample.accordion
-        .card
-            #headingOne.card-header
-                button.btn.btn-link aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" 
-                    h2.text-dark
-                        strong Obciążalność śniegiem &dArr;
+        .card.border
+            #headingOne
+                button.btn.btn-link.collapsed aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" 
+                    h3.text-dark
+                        strong &dArr;Obciążalność śniegiem 
             #collapseOne.collapse aria-labelledby="headingOne" data-parent="#accordionExample" 
                 .card-body
                     h5
                         ul
                             li Śnieg jest oddziaływaniem stanowiącym główne obciążenie dla wielu obiektów budowlanych, szczególnie w przypadku budynków wielkopowierzchniowych o konstrukcji stalowej. Zaprojektowany budynek, w tym szczególnie jego konstrukcja dachowa musi być wytrzymała na zalegające na niej warstwy śniegu i inne występujące na niej obciążenia. Dlatego podczas projektowania każdego budynku należy zwrócić uwagę w jakiej strefie śniegowej będzie on położony.
                             li Jako odniesienie do wyznaczenia obciążenia śniegiem dachów stosuje się obciążenie śniegiem gruntów, które może być wyznaczane na podstawie pomiarów w stacjach meteorologicznych na danym terenie. Należy jednak zaznaczyć, że są to jedynie dane orientacyjne, bo często ciężar pokrywy śnieżnej na gruncie może być mniejszy niż na dobrze izolowanym dachu w tych samych warunkach. W przypadku pokrywy śnieżnej na gruncie pod wpływem temperatury śnieg może topić się i wsiąkać do gruntu, przez co warstwa jest mniejsza niż byłaby na dachu. Dlatego podczas obliczania obciążenia śniegowego na jeden metr kwadratowy dachu uwzględnia się różne współczynniki, które zależą m.in. od bliskości sąsiednich budynków czy też kształtu dachu. Obciążenie to może być inne w różnych częściach tego samego dachu.
-                            li Obciążenie śniegiem jest traktowane jako obciążenie zmienne umiejscowione, statyczne
-                            li Standardowo obciążenie śniegiem dachu ustala się dla przejściowej i trwałej sytuacji obliczeniowej 
-                            li Dodatkowo na terenie Polski należy uwzględniać sytuację wyjątkową obciążenia zaspami śnieżnymi 
+                            li Obciążenie śniegiem jest traktowane jako obciążenie zmienne umiejscowione, statyczne.
+                            li Standardowo obciążenie śniegiem dachu ustala się dla przejściowej i trwałej sytuacji obliczeniowej. 
+                            li Dodatkowo na terenie Polski należy uwzględniać sytuację wyjątkową obciążenia zaspami śnieżnymi. 
                             li Ciężar właściwy śniegu zależny jest od temperatury, śnieg sypki waży mniej niż lód. Należy o tym pamiętać zwłaszcza podczas odwilży po opadach śniegu, bo zwiększająca się temperatura powoduje, że śnieg topi się i przy jej spadku zmienia w oblodzone warstwy groźne dla konstrukcji budynku.
                             li Podczas projektowania budynków przyjmuje się określony czas ich użyteczności zwykle od dziesięciu do kilkuset lat. Im dłuższy okres użyteczności budynku tym współczynnik bezpieczeństwa musi być wyższy.
                             li Do 2006 roku podczas tego typu wyliczeń przyjmowano tylko pięcioletni okres użyteczności budynków, co oznaczało, że raz na pięć lat, obciążenie śniegiem przyjęte jako założenie do zaprojektowania konstrukcji obiektu mogło zostać przekroczone . Takie warunki określała norma PN-80/B-02010 Obciążenia w obliczeniach statycznych – Obciążenie śniegiem (w skrócie PN-B).
                     br/
 
                     h3 Odśnieżanie
-                    h5.text-danger.ml-4 Jeżeli przewiduje się sztuczne usuwanie lub przemieszczanie śniegu na dachu, to dach należy zaprojektować z uwzględnieniem odpowiednich ukłaqdów obciążeń. 
+                    h5.text-danger.ml-4 Jeżeli przewiduje się sztuczne usuwanie lub przemieszczanie śniegu na dachu, to dach należy zaprojektować z uwzględnieniem odpowiednich układów obciążeń. 
                     h5.ml-4 Niewłaściwa kolejność w odśnieżaniu dachu może spowodować awarię, poza tym kucie i skrobanie możę uszkodzić pokrycie dachu.
 
                     h3 Ciężar śniegu
-                    h5.ml-4 W regionach, gdzie możliwe są opadyh deszczu na śnieg, topnienie i zamarzanie śniegu, należy uwzględnić większe obciążenie śniegiem dachu, zwłaszcza w przypadjacg, gdy śnieg i lód mogą blokować odwodnienie dachu.
+                    h5.ml-4 W regionach, gdzie możliwe są opadyh deszczu na śnieg, topnienie i zamarzanie śniegu, należy uwzględnić większe obciążenie śniegiem dachu, zwłaszcza w przypadkach, gdy śnieg i lód mogą blokować odwodnienie dachu.
                     br/
 
                     h5.text-center.offset-1.col-10
@@ -59,11 +61,11 @@ main.container
                     h4 Topienie śniegu:
                     h5
                         ul
-                            li Gdy dachy są dobrze izolowane lub gdy mamy stropodachy wentylowane, śnieg może topnieć od góry w ogrzewany promieniami słonecznymi.
+                            li Gdy dachy są dobrze izolowane lub gdy mamy stropodachy wentylowane, śnieg może topnieć od góry ogrzewany promieniami słonecznymi.
                             li Gdy dachy nie są izolowan, ciepło przenika przez nie, a śnieg topnieje od spodu.
                     br/
                     h3 Obciążenie śniegiem
-                    h5 Obciążemoe śniegiem dachów w sytuacji trwałej i przejściowej wyznacza się z zależności:
+                    h5 Obciążenie śniegiem dachów w sytuacji trwałej i przejściowej wyznacza się z zależności:
 
                     h2.text-center.m-5
                         | s = &mu;
@@ -165,16 +167,16 @@ main.container
                                 td Osłonięty od wiatru
                                 td 1,2
                     br/
-                    h5.ml-4 Teren wystawiony na działanie wiatru: płaskie obszary bez przeszkód, otwarte ze wszystkich stron, bez osłon lub z niewielkimi osłonami uformowanymi przez teren wyższe budowle lub drzewa
-                    h5.ml-4 Teren normalny: obszary, na których niew występuje znaczące przenosZenie śniegu przez wiatr na budowle z powodu ukształtowania terenu, innych budowli lub drzew
-                    h5.ml-4 Teren osłonięty: obszar, na którym rozpatrywana budowla jest znacznie niższa niż otaczająćy ją teren lub otoczona wysokimi drzewami, budowlami    
+                    h5.ml-4 Teren wystawiony na działanie wiatru: płaskie obszary bez przeszkód, otwarte ze wszystkich stron, bez osłon lub z niewielkimi osłonami uformowanymi przez teren wyższe budowle lub drzewa.
+                    h5.ml-4 Teren normalny: obszary, na których nie występuje znaczące przenoszenie śniegu przez wiatr na budowle z powodu ukształtowania terenu, innych budowli lub drzew.
+                    h5.ml-4 Teren osłonięty: obszar, na którym rozpatrywana budowla jest znacznie niższa niż otaczająćy ją teren lub otoczona wysokimi drzewami, budowlami.   
 
                     br/
                     h3 
                         | Współczynnik termiczny C
                         sub t
                     
-                    h5.ml-4 Współczynnik termiczny o wartości innej niż 1 stosuje się w przypadku dachów, których izolachja termiczna jest słaba. Szczególnie w przypadku dachód szklanych. Ciepło które przenika przez dach od wewnątrz, ogrzewa śnieg zmniejszając jego ciężar.
+                    h5.ml-4 Współczynnik termiczny o wartości innej niż 1 stosuje się w przypadku dachów, których izolachja termiczna jest słaba. Szczególnie w przypadku dachów szklanych. Ciepło, które przenika przez dach od wewnątrz, ogrzewa śnieg, zmniejszając jego ciężar.
                     br/
                     h3 Wartość charakterystyczna obciążenia śniegiem gruntu s  
                         sub k
@@ -233,17 +235,15 @@ main.container
                                 sub 2
                                 | ) i odczytuje się go z tableli normy.
                             li W przypadku bardziej skomplikowanych kształtów dachów należy uwzględnić również zwiększone obciążenie śniegiem w miejscach zagłębień (dachy wielopołaciowe, przylegające do wyższych budowli, zawierające przeszkody, czy attyki).        
-        .card
-            #headingTwo.card-header
+        .card.border
+            #headingTwo
                 button.btn.btn-link.collapsed aria-controls="collapseTwo" aria-expanded="false" data-target="#collapseTwo" data-toggle="collapse" type="button" 
-                    h2.text-dark
-                        strong Obciążalność wiatrem &dArr;
+                    h3.text-dark
+                        strong &dArr;Obciążalność wiatrem 
             #collapseTwo.collapse aria-labelledby="headingTwo" data-parent="#accordionExample" 
                 .card-body
                     .row
                         .col-6
-                            h2
-                                strong Obciążalność wiatrem
                             h3.ml-3 Norma PN-77/B-02011 "Obciążenia w obliczeniach statycznych" zawiera podstawowe informacje odnośnie obciążenie wiatrem.
                             h5.mt-5 Polska podzielona jest na tak zwane strefy obciążenia wiatrem. Wszystkie obiekty budowlane, a nawet każde okno, musi wytrzymać obciażenie wiatrem odpowiadające danej strefie. Norma ta dba o nasze bezpieczeństwo, ale także wpływa znacznie na koszt wykonania konstrukcji. Im wyższa obciążalność wiatrem, tym mocniejsza musi być konstrukcja.
                         .col-6
@@ -287,22 +287,25 @@ main.container
                             li za otwory w budynkach uważa się małe otwory w ścianach (np. otwarte okna, wywietrzniki, kominy oraz ogólną przepuszczalność przegród, jak szczeliny wokół drzwi i okien)
                             li przy założeniu, że okna i drzwi są zamknięte, typową przepuszczalność można przyjąć z zakresu od 0,01% do 0,1% pola przegrody
                             li jeżeli przynajmniej na dwóch stronach budynku całkowite pole otworów wynosi więcej niż 30% powierzchni ściany, to obliczenia prowadzi się jak dla wiaty lub ściany wolno stojącej
-        .card
-            #headingThree.card-header
+        
+        br/
+        h1 Zjawiska fizyczne
+        .card.border
+            #headingThree
                 button.btn.btn-link.collapsed aria-controls="collapseThree" aria-expanded="false" data-target="#collapseThree" data-toggle="collapse" type="button" 
-                    h2.text-dark
-                        strong Skraplanie się pary wodnej &dArr;
+                    h3.text-dark
+                        strong &dArr;Skraplanie się pary wodnej 
             #collapseThree.collapse aria-labelledby="headingThree" data-parent="#accordionExample" 
                 .card-body
                     h5
                         ul  
                             li Skraplanie się pary wodnej, nazywane inaczej punktem rosy, dotyczy obiektów, które nie są izolowane ani ogrzewane – dotyczy to również namiotów halowych. Wspomniane zjawisko jest efektem kontaktu ciepłego powietrza jakie występuje w środku hali z zimną powierzchnią plandeki i stalowych profili. Wilgoć zawarta w powietrzu skrapla się wówczas osiadając na wewnętrznej powierzchni pokrycia dachowego. Jakie są konsekwencje tego zjawiska? W sytuacji kiedy w namiocie przechowywane są produkty wrażliwe na wilgoć, mogą one ulec uszkodzeniu, w związku z tym warto zadbać o odpowiednie zabezpieczenia, które pomogą uchronić namioty przed efektem skraplania.
                             li Istnieje kilka sposobów na uniknięcie efektu skraplania, które producenci namiotów stosują, by zapobiec kondensacji pary wodnej wewnątrz konstrukcji. Jednym z nich jest podwójna plandeka sufitowa, która należy do najpopularniejszych rozwiązań w tym obszarze. Jak działa taka plandeka? Kiedy pojawia się skroplina, spływa ona po powierzchni drugiej plandeki i w ten sposób problem jest eliminowany. W powszechnym użyciu są również plandeki pompowane, których mechanizm podtrzymuje stałe ciśnienie w komorze między warstwami dachowymi – wymaga to jednak stałego doprowadzania energii elektrycznej. Innym sposobem jest stosowanie okienek wentylacyjnych, które spychają ciepłe powietrze z góry na dół, co zmniejsza efekt skraplania, ale go nie eliminuje.
-        .card
-            #headingFour.card-header
+        .card.border
+            #headingFour
                 button.btn.btn-link.collapsed aria-controls="collapseFour" aria-expanded="false" data-target="#collapseFour" data-toggle="collapse" type="button" 
-                    h2.text-dark
-                        strong Korozja a cynkowanie &dArr;
+                    h3.text-dark
+                        strong &dArr;Korozja a cynkowanie 
             #collapseFour.collapse aria-labelledby="headingFour" data-parent="#accordionExample" 
                 .card-body
                     h5.text-danger 
@@ -341,14 +344,54 @@ main.container
 
 
 
-        .card
-            #headingFive.card-header
+        br/
+        h1 Wybór materiału
+        .card.border
+            #headingFive
                 button.btn.btn-link.collapsed aria-controls="collapseFive" aria-expanded="false" data-target="#collapseFive" data-toggle="collapse" type="button" 
-                    h2.text-dark
-                        strong Stal kontra aluminium &dArr;
+                    h3.text-dark
+                        strong &dArr;Stal kontra aluminium 
             #collapseFive.collapse aria-labelledby="headingFive" data-parent="#accordionExample" 
                 .card-body
-                    h5.indent Stal kontra aluminium to tak naprawdę kwestia wytrzymałości w stosunku do masy, która ustępuje miejsca wspólnym nieporozumieniom, nawet wśród inżynierów. Podczas gdy fakty są takie, że niektóre stopy aluminium są mocniejsze niż niektóre stopy stali, jest tylko częściową prawdą, że stopy aluminium są silniejsze niż stal. Rozumiemy tę różnicę między stalą a aluminium przez porównanie oparte na wytrzymałości i wadze, sztywności i plonowaniu oraz właściwościach magnetycznych i niemagnetycznych.
-                    h5.indent Jak wiadomo, wytrzymałość odnosi się do maksymalnego obciążenia, jakie może wytrzymać materiał bez zginania i utraty kształtu, a sztywność odnosi się do właściwości plastycznych materiału i do tego, ile może zginać pod obciążeniem lub przy stosowaniu nacisku. Parametr określający sztywność nazywany jest modułem sprężystości. Względna sztywność stali w stosunku do aluminium nie ma przewagi w zakresie sztywności względem siebie, ponieważ oba materiały mogą wytrzymać i wytrzymują ekstremalne ciśnienie i masę ładunku. Aluminium bije stal, ponieważ jego gęstość zginania wynosi około 1/3 gęstości stali, a zaleta grubości przesuwa się o 1/3 wytrzymałości, czyniąc aluminium bardziej odpornym na wgniecenia niż stal o tej samej wadze. Jedną różnicą, jaką ma stal w porównaniu z aluminium, jest to, że po wielokrotnych obciążeniach aluminium ulega zmęczeniu. Stal ma nieokreśloną trwałość zmęczeniową, co oznacza, że ​​ma wystarczającą wytrzymałość, aby wytrzymać powtarzające się cykle obciążenia, a zatem trwa dłużej lub jest zachowywana. Stal jest cięższa niż aluminium, ponieważ stal jest około trzy razy cięższa dla tej samej długości aluminium.
-                    h5.indent Wytrzymałość lub wytrzymałość na rozciąganie wysokogatunkowego aluminium jest w takim samym stosunku jak stal wysokiej jakości. Jeśli porównamy stal i aluminium używane jako materiał konstrukcyjny, ciężar właściwy dla stali nierdzewnej wynosi 7800 ton / m, a aluminium 2700 kg / m3. Stal w porównaniu z aluminium jest nisko technologiczna i lekko niszcząca, ponieważ stal będzie iskra, jeśli użyjesz szlifierki kątowej i krótko dotkniesz metalu. Po uderzeniu w bity stali iskrzy się, a aluminium nie iskrzy. Tam gdzie ugięcie jest ważne, aluminium ma krawędź nad stalą. Stal ma więcej właściwości odbicia niż aluminium. Chociaż możliwe jest ugięcie, preferuje się stal, ponieważ łatwiej ją spawać.
+                    h5.indent Stal kontra aluminium to tak naprawdę kwestia wytrzymałości w stosunku do masy, która ustępuje miejsca wspólnym nieporozumieniom, nawet wśród inżynierów. Fakty są takie, że tylko niektóre stopy aluminium są mocniejsze niż niektóre stopy stali. Rozumiemy różnicę między stalą a aluminium jako porównanie oparte na wytrzymałości i wadze, sztywności i plonowaniu oraz właściwościach magnetycznych i niemagnetycznych.
+                    h5.indent Jak wiadomo, wytrzymałość odnosi się do maksymalnego obciążenia, jakie może wytrzymać materiał bez zginania i utraty kształtu, a sztywność odnosi się do właściwości plastycznych materiału i do tego, ile może się zginać pod obciążeniem lub przy stosowaniu nacisku. Parametr określający sztywność nazywany jest modułem sprężystości. Względna sztywność stali w stosunku do aluminium, nie ma przewagi, ponieważ oba materiały mogą wytrzymać i wytrzymują ekstremalne ciśnienie i masę ładunku. Ważną różnicą, jaką ma stal w porównaniu z aluminium, jest to, że po wielokrotnych obciążeniach aluminium ulega zmęczeniu. Stal ma nieokreśloną trwałość zmęczeniową, co oznacza, że ​​ma wystarczającą wytrzymałość, aby wytrzymać powtarzające się cykle obciążenia. Stal jest około trzy razy cięższa dla tej samej długości aluminium.
+                    h5.indent Wytrzymałość lub wytrzymałość na rozciąganie wysokogatunkowego aluminium jest w takim samym stosunku jak stal wysokiej jakości. Jeśli porównamy stal i aluminium używane jako materiał konstrukcyjny, ciężar właściwy dla stali nierdzewnej wynosi 7900 kg / m3, a aluminium 2700 kg / m3. Preferuje się stal, ponieważ łatwiej ją spawać.
                     h5.indent Aluminium jest niemagnetyczne w porównaniu ze stalą, jednak niektóre rodzaje stopów stali są również niemagnetyczne.
+                    br
+                    h5.offset-2.col-8
+                        table.table.table-bordered
+                            tr
+                                thead
+                                    th Właściwości fizyczne
+                                    th Stal St3s
+                                    th Aluminium
+                            tr
+                                td Gęstość g/cm³
+                                td 7,86
+                                td 2,7
+                            tr    
+                                td wsp. przewodzenia ciepła W/(m·K)
+                                td 
+                                    | 58
+                                td 
+                                    | 200 
+                            tr    
+                                td temp. topnienia °C
+                                td 1500
+                                td 660
+                            tr    
+                                td twardość HB
+                                td 140 
+                                td 15–30 
+                            tr    
+                                td wsp. sprężystości poprzecznej GPa
+                                td 200
+                                td 70
+        .card.border
+            #headingSix
+                button.btn.btn-link.collapsed aria-controls="collapseSix" aria-expanded="false" data-target="#collapseSix" data-toggle="collapse" type="button" 
+                    h3.text-dark
+                        strong &dArr;Dach namiotowy termo 
+            #collapseSix.collapse aria-labelledby="headingSix" data-parent="#accordionExample" 
+                .card-body
+                    h5.indent Dach namiotowy ze względu na kształ jest rodzajem dachu kopertowego, czterospadowego. Dach ten pokrywa się podwójną plandeką w którą pompuje się powietrze pod ciśnieniem nieco wyższym niż ciśnienie atmosferyczne. Podwstaje w ten sposób poduszka powietrzna stanowiąca bardzo dobrą izolację termiczną tak latem jak i zimą. Są to dachy całoroczne, wielosezonowe. Rozwiązanie to likwiduje dwa ważne problemy: skraplania się wody wewnątrz hali oraz osadzania się dużej ilości śniegu na dachu. Wpływ na gromadzenie się śniegu ma zarówno wysoki kąt nachylenia dachu jak i sprężystość samych poduszek. 
