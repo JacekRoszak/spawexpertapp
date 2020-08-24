@@ -42,20 +42,6 @@
 .navbar-expand-lg .navbar-toggler { display: none; }
 }
 
-@media (min-width: 980px){
-  .page-top{
-    min-height: 160px;
-    background-color: rgb(185, 185, 185);
-  /*  background-image: asset_url("tlo.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
- */  z-index: 1 !important;
-  }
- 
-}
-
-
 .btn:hover{   text-decoration: none !important; }
 #head1{       font-size: 36px !important; }
 .text-dark {  color: rgb(53, 53, 53) !important; }
@@ -178,12 +164,12 @@ p{ margin-bottom: 0px !important; }
     height: auto;
   }
 
+
 }
 
 
 @media (min-width: 992px) {
       .p-6{         padding: 50px !important;           }
-      .card-div {   width: 28vh !important;             }
       .card-inner { transition: all 0.5s ease-in-out;   }
 
       #bokihali img{
@@ -196,12 +182,21 @@ p{ margin-bottom: 0px !important; }
           flex: 0 0 50%;
           max-width: 100% !important;
       }
-
+      .card-div {   width: 40% !important;             }
       .card-inner:hover{
         z-index: 1000 !important;
         transform: scale(1.5);
       }
-      
+      .page-top{
+        min-height: 160px;
+        background-color: rgb(185, 185, 185);
+      /*  background-image: asset_url("tlo.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+     */  z-index: 1 !important;
+      }
+    
   
   }
 
@@ -217,6 +212,7 @@ p{ margin-bottom: 0px !important; }
         color: #FFF;
         margin-bottom: 30px;
       }
+      .card-div {   width: 28% !important;             }
 
       .carousel-text {
         overflow: hidden;
@@ -260,6 +256,9 @@ p{ margin-bottom: 0px !important; }
     text-align: center;
     line-height: 50px !important;
   }
-  
+  body{
+    padding-bottom: 50px !important;
+  }
+
 
 }
