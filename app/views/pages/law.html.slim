@@ -1,15 +1,16 @@
 main.container
-
+    br/
 
     #accordionExample.accordion
         .card.border
             #headingOne.text-center
                 button.btn.btn-link.collapsed aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" type="button" 
                     h3.text-dark
-                        strong &dArr;Obciążenie dachu śniegiem 
+                        strong &dArr;Obciążenie śniegiem 
+                    .h4.text-center.text-dark Przystosowanie konstrukcji hali do wytrzymania ciężaru śniegu
             #collapseOne.collapse aria-labelledby="headingOne" data-parent="#accordionExample" 
                 .card-body
-                    h5
+                    .h5
                         ul
                             li Śnieg jest oddziaływaniem stanowiącym główne obciążenie dla wielu obiektów budowlanych, szczególnie w przypadku budynków wielkopowierzchniowych o konstrukcji stalowej. Zaprojektowany budynek, w tym szczególnie jego konstrukcja dachowa musi być wytrzymała na zalegające na niej warstwy śniegu i inne występujące na niej obciążenia. Dlatego podczas projektowania każdego budynku należy zwrócić uwagę w jakiej strefie śniegowej będzie on położony.
                             li Jako odniesienie do wyznaczenia obciążenia śniegiem dachów stosuje się obciążenie śniegiem gruntów, które może być wyznaczane na podstawie pomiarów w stacjach meteorologicznych na danym terenie. Należy jednak zaznaczyć, że są to jedynie dane orientacyjne, bo często ciężar pokrywy śnieżnej na gruncie może być mniejszy niż na dobrze izolowanym dachu w tych samych warunkach. W przypadku pokrywy śnieżnej na gruncie pod wpływem temperatury śnieg może topić się i wsiąkać do gruntu, przez co warstwa jest mniejsza niż byłaby na dachu. Dlatego podczas obliczania obciążenia śniegowego na jeden metr kwadratowy dachu uwzględnia się różne współczynniki, które zależą m.in. od bliskości sąsiednich budynków czy też kształtu dachu. Obciążenie to może być inne w różnych częściach tego samego dachu.
@@ -22,14 +23,14 @@ main.container
                     br/
 
                     h3 Odśnieżanie
-                    h5.text-danger.ml-4 Jeżeli przewiduje się sztuczne usuwanie lub przemieszczanie śniegu na dachu, to dach należy zaprojektować z uwzględnieniem odpowiednich układów obciążeń. 
-                    h5.ml-4 Niewłaściwa kolejność w odśnieżaniu dachu może spowodować awarię, poza tym kucie i skrobanie możę uszkodzić pokrycie dachu.
+                    .h5.text-danger.ml-4 Jeżeli przewiduje się sztuczne usuwanie lub przemieszczanie śniegu na dachu, to dach należy zaprojektować z uwzględnieniem odpowiednich układów obciążeń. 
+                    .h5.ml-4 Niewłaściwa kolejność w odśnieżaniu dachu może spowodować awarię, poza tym kucie i skrobanie możę uszkodzić pokrycie dachu.
 
                     h3 Ciężar śniegu
-                    h5.ml-4 W regionach, gdzie możliwe są opadyh deszczu na śnieg, topnienie i zamarzanie śniegu, należy uwzględnić większe obciążenie śniegiem dachu, zwłaszcza w przypadkach, gdy śnieg i lód mogą blokować odwodnienie dachu.
+                    .h5.ml-4 W regionach, gdzie możliwe są opadyh deszczu na śnieg, topnienie i zamarzanie śniegu, należy uwzględnić większe obciążenie śniegiem dachu, zwłaszcza w przypadkach, gdy śnieg i lód mogą blokować odwodnienie dachu.
                     br/
 
-                    h5.text-center.offset-1.col-10
+                    .h5.text-center.offset-1.col-10
                         table.table.table-bordered
                             tr
                                 th Rodzaj śniegu
@@ -57,14 +58,14 @@ main.container
                                 td 8,5 - 9,0
                     br/
                     h3 Problemy z odprowadzeniem wody
-                    h4 Topienie śniegu:
-                    h5
+                    .h4 Topienie śniegu:
+                    .h5
                         ul
                             li Gdy dachy są dobrze izolowane lub gdy mamy stropodachy wentylowane, śnieg może topnieć od góry ogrzewany promieniami słonecznymi.
                             li Gdy dachy nie są izolowan, ciepło przenika przez nie, a śnieg topnieje od spodu.
                     br/
                     h3 Obciążenie śniegiem
-                    h5 Obciążenie śniegiem dachów w sytuacji trwałej i przejściowej wyznacza się z zależności:
+                    .h5 Obciążenie śniegiem dachów w sytuacji trwałej i przejściowej wyznacza się z zależności:
 
                     h2.text-center.m-5
                         | s = &mu;
@@ -76,20 +77,20 @@ main.container
                         | s
                         sub k
 
-                    h5 gdzie: 
-                    h5 
+                    .h5 gdzie: 
+                    .h5 
                         | &mu;
                         sub i
                         |  - współczynnik kształtu dachu
-                    h5 
+                    .h5 
                         | C
                         sub e
                         |  - współczynnik ekspozycji
-                    h5 
+                    .h5 
                         | C
                         sub t
                         |  - współczynnik termiczny
-                    h5 
+                    .h5 
                         | s
                         sub k
                         |  - wartość charakterystyczna obciążenia śniegiem gruntu
@@ -97,7 +98,7 @@ main.container
 
                     h3 Współczynniki kombinacyjne &Psi;
                     br/
-                    h5.offset-3.col-6.text-center
+                    .h5.offset-3.col-6.text-center
                         table.table.table-bordered
                             thead
                                 tr
@@ -118,8 +119,8 @@ main.container
                                     td 0
                     br/
                     h3 Wyjątkowe obciążenie śniegiem
-                    h4 Sposób wyznaczania wyjątkowego obciążenia śniegiem
-                    h5.ml-3 Dla lokalizacji, gdzie może wystąpić wyjątkowe obciażenie śniegiem gruntu, może być ono wyznaczone ze wzoru:
+                    .h4 Sposób wyznaczania wyjątkowego obciążenia śniegiem
+                    .h5.ml-3 Dla lokalizacji, gdzie może wystąpić wyjątkowe obciażenie śniegiem gruntu, może być ono wyznaczone ze wzoru:
                     h2.text-center.m-5 
                         | S
                         sub Ad
@@ -127,8 +128,8 @@ main.container
                         sub esl
                         | S
                         sub k
-                    h5 W którym:
-                    h6
+                    .h5 W którym:
+                    .h6
                         ul
                             li 
                                 | S
@@ -147,9 +148,9 @@ main.container
                         | Współczynnik ekspozycji C
                         sub e
                     
-                    h5.ml-4 Zależy od rodzaju terenu otaczającego analizowany budynek. Rozróżnia się trzy rodzaje terenu.
+                    .h5.ml-4 Zależy od rodzaju terenu otaczającego analizowany budynek. Rozróżnia się trzy rodzaje terenu.
                     br/
-                    h5.offset-3.col-6 
+                    .h5.offset-3.col-6 
                         table.table.table-bordered
                             tr  
                                 th Teren
@@ -166,20 +167,20 @@ main.container
                                 td Osłonięty od wiatru
                                 td 1,2
                     br/
-                    h5.ml-4 Teren wystawiony na działanie wiatru: płaskie obszary bez przeszkód, otwarte ze wszystkich stron, bez osłon lub z niewielkimi osłonami uformowanymi przez teren wyższe budowle lub drzewa.
-                    h5.ml-4 Teren normalny: obszary, na których nie występuje znaczące przenoszenie śniegu przez wiatr na budowle z powodu ukształtowania terenu, innych budowli lub drzew.
-                    h5.ml-4 Teren osłonięty: obszar, na którym rozpatrywana budowla jest znacznie niższa niż otaczająćy ją teren lub otoczona wysokimi drzewami, budowlami.   
+                    .h5.ml-4 Teren wystawiony na działanie wiatru: płaskie obszary bez przeszkód, otwarte ze wszystkich stron, bez osłon lub z niewielkimi osłonami uformowanymi przez teren wyższe budowle lub drzewa.
+                    .h5.ml-4 Teren normalny: obszary, na których nie występuje znaczące przenoszenie śniegu przez wiatr na budowle z powodu ukształtowania terenu, innych budowli lub drzew.
+                    .h5.ml-4 Teren osłonięty: obszar, na którym rozpatrywana budowla jest znacznie niższa niż otaczająćy ją teren lub otoczona wysokimi drzewami, budowlami.   
 
                     br/
                     h3 
                         | Współczynnik termiczny C
                         sub t
                     
-                    h5.ml-4 Współczynnik termiczny o wartości innej niż 1 stosuje się w przypadku dachów, których izolachja termiczna jest słaba. Szczególnie w przypadku dachów szklanych. Ciepło, które przenika przez dach od wewnątrz, ogrzewa śnieg, zmniejszając jego ciężar.
+                    .h5.ml-4 Współczynnik termiczny o wartości innej niż 1 stosuje się w przypadku dachów, których izolachja termiczna jest słaba. Szczególnie w przypadku dachów szklanych. Ciepło, które przenika przez dach od wewnątrz, ogrzewa śnieg, zmniejszając jego ciężar.
                     br/
                     h3 Wartość charakterystyczna obciążenia śniegiem gruntu s  
                         sub k
-                    h5.ml-4
+                    .h5.ml-4
                         | s
                         sub k
                         |  odczytuje się dla konretnej strefy Polski z załącznika krajowego. Dla 1,3 i 5 strefy wartość obciążenia  zależy od wysokości nad poziomem morza.
@@ -189,7 +190,7 @@ main.container
                         = image_tag  "sniegiem.png", width: "100%"
                     
                     .d-inline-block
-                        h5  
+                        .h5  
                             br/
                             br/
 
@@ -227,7 +228,7 @@ main.container
                     h3 
                         | Współczynnik &mu;
                         sub i
-                    h5 
+                    .h5 
                         ul
                             li  
                                 |Współczynnik &mu; wyznacza się według normy w zależności od kształtu dachu, zależy od kąta nachylenia każdej z połaci (&alpha;
@@ -241,16 +242,17 @@ main.container
                 button.btn.btn-link.collapsed aria-controls="collapseTwo" aria-expanded="false" data-target="#collapseTwo" data-toggle="collapse" type="button" 
                     h3.text-dark
                         strong &dArr;Wpływ wiatru na konstrukcję hali
+                    .h4.text-center.text-dark Przystosowanie konstrukcji hali do wytrzymania naporu wiatru
             #collapseTwo.collapse aria-labelledby="headingTwo" data-parent="#accordionExample" 
                 .card-body
                     .row
                         .col-6
                             h3.ml-3 Norma PN-77/B-02011 "Obciążenia w obliczeniach statycznych" zawiera podstawowe informacje odnośnie obciążenie wiatrem.
-                            h5.mt-5 Polska podzielona jest na tak zwane strefy obciążenia wiatrem. Wszystkie obiekty budowlane, a nawet każde okno, musi wytrzymać obciażenie wiatrem odpowiadające danej strefie. Norma ta dba o nasze bezpieczeństwo, ale także wpływa znacznie na koszt wykonania konstrukcji. Im wyższa obciążalność wiatrem, tym mocniejsza musi być konstrukcja.
+                            .h5.mt-5 Polska podzielona jest na tak zwane strefy obciążenia wiatrem. Wszystkie obiekty budowlane, a nawet każde okno, musi wytrzymać obciażenie wiatrem odpowiadające danej strefie. Norma ta dba o nasze bezpieczeństwo, ale także wpływa znacznie na koszt wykonania konstrukcji. Im wyższa obciążalność wiatrem, tym mocniejsza musi być konstrukcja.
                         .col-6
                             = image_tag  "wiatrem.jpg", width: "100%"
                     h3 Podstawowe informacje:
-                    h5
+                    .h5
                         ul 
                             li wiatr - obciążenie zmienne umiejscowione
                             li efekt oddziaływania wiatru zależy od rozmiarów kształtu i właściwości dynamicznych kontrukcji
@@ -273,7 +275,7 @@ main.container
                                 sub i
                                 | ), ciśnienie sumaryczne jest różnicą algebraiczną między tymi wartościami
                     h3 Sytuacje obliczeniowe
-                    h5
+                    .h5
                         ul
                             li oddziaływanie wiatru należy uwzględnić dla każdej sytuacji obliczeniowej
                             li należy wziąć pod uwagę inne czynniki, które mogą zmienić oddziaływanie wiatru (np. śnieg, lód, zmiany konstrukcji w czasie wznoszenia, kształt, właściwości dynamiczne)
@@ -281,7 +283,7 @@ main.container
                             li jeżeli konstrukcja jest podatna na zmęczenie pod wpływem wiatru to skutki te należy uwzględnić wg zał. B, C i E
                         
                     h3 Ciśnienie zewnętrzne i wewnętrzne
-                    h5  
+                    .h5  
                         ul
                             li parcie wiatru skierowane ku powierzchni ma wartość dodatnią, a ssanie skierowane od powierzchni – ujemną
                             li we wnętrzu budynku może powstać zarówno dodatnie, jak i ujemne ciśnienie wiatru. Jest to uzależnione od umiejscowienia otworów w ścianie zewnętrznej w stosunku do kierunku wiatru
@@ -294,10 +296,11 @@ main.container
             #headingThree.text-center
                 button.btn.btn-link.collapsed aria-controls="collapseThree" aria-expanded="false" data-target="#collapseThree" data-toggle="collapse" type="button" 
                     h3.text-dark
-                        strong &dArr;Skraplanie się pary wodnej 
+                        strong &dArr;Skraplanie się pary wodnej.
+                    .h4.text-center.text-dark Ochrona magazynowanego towaru przed wilgocią.
             #collapseThree.collapse aria-labelledby="headingThree" data-parent="#accordionExample" 
                 .card-body
-                    h5
+                    .h5
                         ul  
                             li Skraplanie się pary wodnej, nazywane inaczej punktem rosy, dotyczy obiektów, które nie są izolowane ani ogrzewane – dotyczy to również namiotów halowych. Wspomniane zjawisko jest efektem kontaktu ciepłego powietrza jakie występuje w środku hali z zimną powierzchnią plandeki i stalowych profili. Wilgoć zawarta w powietrzu skrapla się wówczas osiadając na wewnętrznej powierzchni pokrycia dachowego. Jakie są konsekwencje tego zjawiska? W sytuacji kiedy w namiocie przechowywane są produkty wrażliwe na wilgoć, mogą one ulec uszkodzeniu, w związku z tym warto zadbać o odpowiednie zabezpieczenia, które pomogą uchronić namioty przed efektem skraplania.
                             li Istnieje kilka sposobów na uniknięcie efektu skraplania, które producenci namiotów stosują, by zapobiec kondensacji pary wodnej wewnątrz konstrukcji. Jednym z nich jest podwójna plandeka sufitowa, która należy do najpopularniejszych rozwiązań w tym obszarze. Jak działa taka plandeka? Kiedy pojawia się skroplina, spływa ona po powierzchni drugiej plandeki i w ten sposób problem jest eliminowany. W powszechnym użyciu są również plandeki pompowane, których mechanizm podtrzymuje stałe ciśnienie w komorze między warstwami dachowymi – wymaga to jednak stałego doprowadzania energii elektrycznej. Innym sposobem jest stosowanie okienek wentylacyjnych, które spychają ciepłe powietrze z góry na dół, co zmniejsza efekt skraplania, ale go nie eliminuje.
@@ -305,16 +308,17 @@ main.container
             #headingFour.text-center
                 button.btn.btn-link.collapsed aria-controls="collapseFour" aria-expanded="false" data-target="#collapseFour" data-toggle="collapse" type="button" 
                     h3.text-dark
-                        strong &dArr;Korozja a cynkowanie 
+                        strong &dArr;Cynkowanie 
+                    .h4.text-center.text-dark Najlepszy sposób na powstrzymanie korozji.
             #collapseFour.collapse aria-labelledby="headingFour" data-parent="#accordionExample" 
                 .card-body
-                    h5.text-danger 
+                    .h5.text-danger 
                         strong Cynkowanie to obecnie jeden z najskuteczniejszych sposobów ochrony elementów metalowych przed rdzą.
-                    h5 Powłoka cynkowa stanowi bardzo trwałą i skuteczną barierę oddzielającą stal od środowiska korozyjnego. Istnieje kilka metod technologicznych nakładania cynku, spośród których cynkowanie ogniowe jest najbardziej uniwersalne, bowiem sprawdza się zarówno w przypadku drobnych elementów, jak również dużych konstrukcji stalowych.
-                    h5 Proces cynkowania ogniowego składa się z kilku etapów wstępnych (I-V), poprzedzających bezpośrednie zanurzenie elementu stalowego w ciekłym cynku (VI), wskutek czego powstaje mechanicznie trwała i nieprzepuszczalna powłoka cynkowa chroniąca materiał stalowy przed korozją i tym samym zapobiegająca niszczeniu stali.
+                    .h5 Powłoka cynkowa stanowi bardzo trwałą i skuteczną barierę oddzielającą stal od środowiska korozyjnego. Istnieje kilka metod technologicznych nakładania cynku, spośród których cynkowanie ogniowe jest najbardziej uniwersalne, bowiem sprawdza się zarówno w przypadku drobnych elementów, jak również dużych konstrukcji stalowych.
+                    .h5 Proces cynkowania ogniowego składa się z kilku etapów wstępnych (I-V), poprzedzających bezpośrednie zanurzenie elementu stalowego w ciekłym cynku (VI), wskutek czego powstaje mechanicznie trwała i nieprzepuszczalna powłoka cynkowa chroniąca materiał stalowy przed korozją i tym samym zapobiegająca niszczeniu stali.
                     br/
                     h3 Etapy procesu cynkowania:
-                    h5  
+                    .h5  
                         ol  
                             li 
                                 strong Obróbka strumieniowo-ścierna:
@@ -350,14 +354,15 @@ main.container
                 button.btn.btn-link.collapsed aria-controls="collapseFive" aria-expanded="false" data-target="#collapseFive" data-toggle="collapse" type="button" 
                     h3.text-dark
                         strong &dArr;Stal kontra aluminium 
+                    .h4.text-center.text-dark Dlaczego nasze konstrukcje wykonujemy ze stali.
             #collapseFive.collapse aria-labelledby="headingFive" data-parent="#accordionExample" 
                 .card-body
-                    h5.indent Stal kontra aluminium to tak naprawdę kwestia wytrzymałości w stosunku do masy, która ustępuje miejsca wspólnym nieporozumieniom, nawet wśród inżynierów. Fakty są takie, że tylko niektóre stopy aluminium są mocniejsze niż niektóre stopy stali. Rozumiemy różnicę między stalą a aluminium jako porównanie oparte na wytrzymałości i wadze, sztywności i plonowaniu oraz właściwościach magnetycznych i niemagnetycznych.
-                    h5.indent Jak wiadomo, wytrzymałość odnosi się do maksymalnego obciążenia, jakie może wytrzymać materiał bez zginania i utraty kształtu, a sztywność odnosi się do właściwości plastycznych materiału i do tego, ile może się zginać pod obciążeniem lub przy stosowaniu nacisku. Parametr określający sztywność nazywany jest modułem sprężystości. Względna sztywność stali w stosunku do aluminium, nie ma przewagi, ponieważ oba materiały mogą wytrzymać i wytrzymują ekstremalne ciśnienie i masę ładunku. Ważną różnicą, jaką ma stal w porównaniu z aluminium, jest to, że po wielokrotnych obciążeniach aluminium ulega zmęczeniu. Stal ma nieokreśloną trwałość zmęczeniową, co oznacza, że ​​ma wystarczającą wytrzymałość, aby wytrzymać powtarzające się cykle obciążenia. Stal jest około trzy razy cięższa dla tej samej długości aluminium.
-                    h5.indent Wytrzymałość lub wytrzymałość na rozciąganie wysokogatunkowego aluminium jest w takim samym stosunku jak stal wysokiej jakości. Jeśli porównamy stal i aluminium używane jako materiał konstrukcyjny, ciężar właściwy dla stali nierdzewnej wynosi 7900 kg / m3, a aluminium 2700 kg / m3. Preferuje się stal, ponieważ łatwiej ją spawać.
-                    h5.indent Aluminium jest niemagnetyczne w porównaniu ze stalą, jednak niektóre rodzaje stopów stali są również niemagnetyczne.
+                    .h5.indent Stal kontra aluminium to tak naprawdę kwestia wytrzymałości w stosunku do masy, która ustępuje miejsca wspólnym nieporozumieniom, nawet wśród inżynierów. Fakty są takie, że tylko niektóre stopy aluminium są mocniejsze niż niektóre stopy stali. Rozumiemy różnicę między stalą a aluminium jako porównanie oparte na wytrzymałości i wadze, sztywności i plonowaniu oraz właściwościach magnetycznych i niemagnetycznych.
+                    .h5.indent Jak wiadomo, wytrzymałość odnosi się do maksymalnego obciążenia, jakie może wytrzymać materiał bez zginania i utraty kształtu, a sztywność odnosi się do właściwości plastycznych materiału i do tego, ile może się zginać pod obciążeniem lub przy stosowaniu nacisku. Parametr określający sztywność nazywany jest modułem sprężystości. Względna sztywność stali w stosunku do aluminium, nie ma przewagi, ponieważ oba materiały mogą wytrzymać i wytrzymują ekstremalne ciśnienie i masę ładunku. Ważną różnicą, jaką ma stal w porównaniu z aluminium, jest to, że po wielokrotnych obciążeniach aluminium ulega zmęczeniu. Stal ma nieokreśloną trwałość zmęczeniową, co oznacza, że ​​ma wystarczającą wytrzymałość, aby wytrzymać powtarzające się cykle obciążenia. Stal jest około trzy razy cięższa dla tej samej długości aluminium.
+                    .h5.indent Wytrzymałość lub wytrzymałość na rozciąganie wysokogatunkowego aluminium jest w takim samym stosunku jak stal wysokiej jakości. Jeśli porównamy stal i aluminium używane jako materiał konstrukcyjny, ciężar właściwy dla stali nierdzewnej wynosi 7900 kg / m3, a aluminium 2700 kg / m3. Preferuje się stal, ponieważ łatwiej ją spawać.
+                    .h5.indent Aluminium jest niemagnetyczne w porównaniu ze stalą, jednak niektóre rodzaje stopów stali są również niemagnetyczne.
                     br
-                    h5.offset-2.col-8
+                    .h5.offset-2.col-8
                         table.table.table-bordered
                             tr
                                 thead
@@ -391,6 +396,7 @@ main.container
                 button.btn.btn-link.collapsed aria-controls="collapseSix" aria-expanded="false" data-target="#collapseSix" data-toggle="collapse" type="button" 
                     h3.text-dark
                         strong &dArr;Dach namiotowy termo 
+                    .h4.text-center.text-dark Poduszki powietrzne jako izolacja.
             #collapseSix.collapse aria-labelledby="headingSix" data-parent="#accordionExample" 
                 .card-body
-                    h5.indent Dach namiotowy ze względu na kształ jest rodzajem dachu kopertowego, czterospadowego. Dach ten pokrywa się podwójną plandeką w którą pompuje się powietrze pod ciśnieniem nieco wyższym niż ciśnienie atmosferyczne. Podwstaje w ten sposób poduszka powietrzna stanowiąca bardzo dobrą izolację termiczną tak latem jak i zimą. Są to dachy całoroczne, wielosezonowe. Rozwiązanie to likwiduje dwa ważne problemy: skraplania się wody wewnątrz hali oraz osadzania się dużej ilości śniegu na dachu. Wpływ na gromadzenie się śniegu ma zarówno wysoki kąt nachylenia dachu jak i sprężystość samych poduszek. 
+                    .h5.indent Dach namiotowy ze względu na kształ jest rodzajem dachu kopertowego, czterospadowego. Dach ten pokrywamy podwójną plandeką w którą pompuje się powietrze pod ciśnieniem nieco wyższym niż ciśnienie atmosferyczne. Podwstaje w ten sposób poduszka powietrzna stanowiąca bardzo dobrą izolację termiczną tak latem jak i zimą. Są to dachy całoroczne, wielosezonowe. Rozwiązanie to likwiduje dwa ważne problemy: skraplania się wody wewnątrz hali oraz osadzania się dużej ilości śniegu na dachu. Wpływ na gromadzenie się śniegu ma zarówno wysoki kąt nachylenia dachu jak i sprężystość samych poduszek. 
