@@ -14,157 +14,117 @@
  *= require_self
  */
 
- @media (min-width: 1550px){
-  .btn-lg {
-    font-size: 54px !important;
-    padding:  0px 15px 0px 15px !important;
-    margin-bottom: 0;
-  }
- }
-
- @media (max-width: 1549px){
-  .btn-lg {
-  font-size: 42px !important;
-  padding:  0px 15px 0px 15px !important;
-  margin-bottom: 0;
-}
+body{
+      padding-top: 0px !important;
+      margin: 0px !important;
+      top: -30px;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
 }
 
- @media (min-width: 768px){
- .navbar-nav > li > a {
-     padding-top: 0px;
-     padding-bottom: 0px;
- }
- .navbar-nav {
-  float: none;
-  margin: 0;
+.categories {
+      text-align: center;
+      margin-top: 20px;
 }
-.navbar-expand-lg .navbar-toggler { display: none; }
+
+@media (min-width: 1550px){
+      .btn-lg {
+            font-size: 54px !important;
+            padding:  0px 15px 0px 15px !important;
+            margin-bottom: 0;
+      }
+}
+
+@media (max-width: 1549px){
+      .btn-lg {
+            font-size: 42px !important;
+            padding:  0px 15px 0px 15px !important;
+            margin-bottom: 0;
+      }
+}
+
+@media (min-width: 768px){
+      .navbar-nav > li > a {
+            padding-top: 0px;
+            padding-bottom: 0px;
+      }
+      .navbar-nav {
+            float: none;
+            margin: 0;
+      }
+      .navbar-expand-lg .navbar-toggler { display: none; }
 }
 
 .btn:hover{   text-decoration: none !important; }
-#head1{       font-size: 36px !important; }
 .text-dark {  color: rgb(53, 53, 53) !important; }
 .indent{      text-indent: 20px; }
-
-
+.card-title{  font-size: 20px !important; }
+.card-text{   font-size: 14px !important; }
+p{            margin-bottom: 0px !important; }
 
 .navbar-light .navbar-toggler-icon{
-  background-size: 60px 60px;
-  width: 60px;
-  height: 60px;
-}
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;   }
 
-.logo{
-  background-image: asset_url('1.png');
-  height: 140px;
-  width: 380px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
+.logo{background-image: asset_url('1.png');
+      height: 140px;
+      width: 380px;
+      background-size: contain;
+      background-repeat: no-repeat;  }
 
 #about-card{
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
 }
-
-
-
 
 .btn-lg a:hover{
-  color: black;
-  text-decoration: none;
-
-}
- .my-scroll{
-  overflow: auto;
-  height: 70vh;
+      color: black;
+      text-decoration: none;
 }
 
-
-
-  h1{
-    font-size: 48px !important;
-    margin-top: 35px;
-  }
-
-  h2{
-    font-size: 36px !important;
-    margin-top: 30px;
-  }
-
-  h3{
-    font-size: 30px !important;
-    margin-top: 30px;
-  }
-  h4{ font-size: 26px !important;   }
-  h5{ font-size: 20px !important;   }
-  h6{
-    text-indent: 30px;
-    font-size: 16px !important;
-  }
-
-  .law-nav{ font-size: 18px !important;   }
-  .law-nav p{ font-size: 26px !important;   }
-
-  .law-nav .nav-sm-item{ font-size: 16px !important; }
-
-  .law-nav a{ color: black !important; }
-
- body{
-   padding-top: 0px !important;
-   margin: 0px !important;
-   top: -30px;
-   position: relative;
-   height: 100vh;
-   overflow: hidden;
-}
- 
+h1{       font-size: 48px !important; margin-top: 35px; }
+h2{       font-size: 36px !important; margin-top: 30px;  }
+h3{       font-size: 30px !important; margin-top: 30px;  }
+h4{       font-size: 26px !important;   }
+h5{       font-size: 20px !important;   }
+h6{       font-size: 16px !important; text-indent: 30px; }
 .my-carousel{ border-radius: 20px !important; }
 
 .my-nav{
-  font-size: 56px;
-  font-family: 'Alata', sans-serif; 
-  padding: 0px;
+      font-size: 56px;
+      font-family: 'Alata', sans-serif; 
+      padding: 0px;
 }
 
-.card-title{ font-size: 20px !important; }
-
-.card-text{ font-size: 14px !important; }
-
-p{ margin-bottom: 0px !important; }
-
 #main_container{
-  font-size: 28px ;
-  font-family: 'Alata', sans-serif; 
-  height: calc(100vh - 180px);
-  width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+      font-size: 28px ;
+      font-family: 'Alata', sans-serif; 
+      height: calc(100vh - 180px);
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
 }
 
 .logo2{
-  width: 100%;
-  min-height: 150px;
- background-image: asset_url('1.png');
- background-size: contain;
- background-position: center;
- background-repeat: no-repeat;
- margin-left: auto;
- margin-right: auto;
+      width: 100%;
+      min-height: 150px;
+      background-image: asset_url('1.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
 }
 
-#head{ font-size: 28px !important; }
 
 @media (max-width: 991px) {
-  #bokihali img{
-    width: 60vw;
-    height: auto;
-  }
-
-
+      #side-material img{
+            width: 60vw;
+            height: auto;
+      }
 }
 
 
@@ -172,7 +132,7 @@ p{ margin-bottom: 0px !important; }
       .p-6{         padding: 50px !important;           }
       .card-inner { transition: all 0.5s ease-in-out;   }
 
-      #bokihali img{
+      #side-material img{
         width: 20vw;
         height: auto;
       }
@@ -196,12 +156,7 @@ p{ margin-bottom: 0px !important; }
         background-position: center;
      */  z-index: 1 !important;
       }
-    
-  
-  }
-
-
-
+}
 
 @media (min-width: 1200px){
       .carousel-container {
