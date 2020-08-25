@@ -45,7 +45,13 @@ body{
       .phone-view-rapair{
             height: 50px;
             width: 100%;
-      }      
+      }    
+      #main-header-offer{
+            font-size: 30px !important;
+      }  
+      .container{
+            padding: 0 !important;
+      }
 }
 
 @media (max-width: 991px) and  (min-width: 583px){
