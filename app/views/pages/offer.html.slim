@@ -1,48 +1,41 @@
-main.container.pb-5
   section 
-    .mt-5.text-center
-      h1#main-header-offer
+    .text-center.p-4.bg-denim.text-white.mt-4
+      h1
         | Wykonujemy 
         strong hale namiotowe 
         | w całej Polsce, według życzenia klienta. 
-      h1#main-header-offer
+      h1
         | Dowolne wymiary i materiały, przy minimalnej powierzchni 96m <sup>2
-    br/
-    h2.text-center Rodzaje hal namiotowych
-
-    .categories
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Magazynowe
-          = image_tag  "inventory.png", class: "height: auto;"
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Przemysłowe
-          = image_tag  "factory.png", class: "height: auto;"
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Sportowe
-          = image_tag  "football-player.png", class: "height: auto;"
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Imprezowe
-          = image_tag  "cheers.png", class: "height: auto;"
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Rolnicze
-          = image_tag  "tractor.png", class: "height: auto;"
-      .d-inline-block.m-3.text-center
-          h3.mb-2 Jeździeckie
-          = image_tag  "bet.png", class: "height: auto;"
-    br/
   section
-    .text-center.p-4.bg-dark.text-white
-      .container#carousel-container
-        .text-container
-          .carousel-text
-            .inner
-              .element Montaż u klienta nawet w 3 tygodnie od zamówienia! 
-              .element Hale są objęte gwarancją.
-              .element Montaż trwa średnio od 2 - 4 dni. W zależności od wymiarów.
-              .element Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
-
+    .plan-div
+  section
+      .categories
+        h2.text-center Rodzaje hal namiotowych
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Magazynowe
+            = image_tag  "inventory.png", class: "height: auto;"
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Przemysłowe
+            = image_tag  "factory.png", class: "height: auto;"
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Sportowe
+            = image_tag  "football-player.png", class: "height: auto;"
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Imprezowe
+            = image_tag  "cheers.png", class: "height: auto;"
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Rolnicze
+            = image_tag  "tractor.png", class: "height: auto;"
+        .d-inline-block.m-3.text-center
+            h3.mb-2 Jeździeckie
+            = image_tag  "bet.png", class: "height: auto;"
+  section
+    .text-center.p-4.bg-denim.text-white
+      p Montaż u klienta nawet w 3 tygodnie od zamówienia! 
+      p Hale są objęte gwarancją.
+  section.bg-midgray.text-white
     .container
-      .col-lg-6.mt-5
+      .col-lg-6.mt-5.mb-5
         #carouselExampleControls1.carousel.slide data-ride="carousel" 
           .carousel-inner.my-carousel
             .carousel-item.active
@@ -72,8 +65,13 @@ main.container.pb-5
         li blachy trapezowej
         li płyty warstwowej
         li termoizolacyjnego materiału dwuwarstwowego
+  
+  section
+    .text-center.p-4.bg-denim.text-white
+      p Montaż trwa średnio od 2 - 4 dni. W zależności od wymiarów.
+      p Wszystkie materiały do produkcji są pierwszego gatunku i posiadają atesty. 
 
-
+  section
     .container
       .col-lg-6.mt-2.p-6
         h3 
@@ -86,7 +84,7 @@ main.container.pb-5
         .h5.mt-3 Mocując hale wykorzystując kotwy chemiczne. 
         
 
-      .col-lg-6.mt-5
+      .col-lg-6.mt-5.mb-5
         #carouselExampleControls2.carousel.slide data-ride="carousel" 
           .carousel-inner.my-carousel
             .carousel-item.active
@@ -105,17 +103,13 @@ main.container.pb-5
             span.sr-only Następne
 
   section
-    .mt-5.text-center.p-4.bg-dark.text-white
-      .container#carousel-container
-        .text-container
-          .carousel-text
-            .inner
-              .element Hale można skonfigurować według własnych potrzeb. 
-              .element Bramy i drzwi techniczne w dowolnym miejscu. 
-              .element Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
+    .text-center.p-4.bg-denim.text-white
+      p Hale można skonfigurować według własnych potrzeb. 
+      p Bramy i drzwi techniczne w dowolnym miejscu. 
+      p Podsiadamy dwie ekipy montażowe, dzięki czemu szybko i sprawnie realizujemy zamówienia. 
 
-    .container
-
+  section
+    #side-material-section
       h2.text-center.mt-4
         strong  Materiał do wykonania bocznych ścian:
       .text-center
@@ -133,46 +127,46 @@ main.container.pb-5
         
 
   section
-    .mt-5.text-center.p-0.bg-dark.text-white
-      .container
-          h3.m-3 Wykorzystujemy atestowaną stal konstrukcyjną gatunku St3s lub wyższą, zabezpieczoną poprzez cynkowanie ogniowe.
+    .text-center.p-4.bg-denim.text-white
+      p Wykorzystujemy atestowaną stal konstrukcyjną gatunku St3s lub wyższą, zabezpieczoną poprzez cynkowanie ogniowe.
 
-    .container
-      
-      .col-lg-6.mt-2.p-3
-        h2 
-          strong Opcje dodatkowe:
-        ul
-          li świetliki dachowe
-          li dodatkowe otwory wentylacyjne
-          li bramy
-          li drzwi techniczne 
-          li grafiki
-          li rynny
-          li powłoki anty-kondensacyjne 
-          li powłoki przeciw-skraplające
-          li fartuchy na dole hali
-      
-      .col-lg-6.mt-5
-        #carouselExampleControls4.carousel.slide data-ride="carousel" 
-          .carousel-inner.my-carousel
-            .carousel-item.active
-              = image_tag  "slide1.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide2.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide3.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide4.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide5.jpg", class: "d-block w-100" 
-            .carousel-item
-              = image_tag  "slide6.jpg", class: "d-block w-100" 
-          a.carousel-control-prev data-slide="prev" href="#carouselExampleControls4" role="button" 
-            span.carousel-control-prev-icon aria-hidden="true" 
-            span.sr-only Poprzednie
-          a.carousel-control-next data-slide="next" href="#carouselExampleControls4" role="button" 
-            span.carousel-control-next-icon aria-hidden="true" 
-            span.sr-only Następne
+  secton
+    .bg-midgray.text-white
+      .container
+        .col-lg-6.mt-2.p-3
+          h2 
+            strong Opcje dodatkowe:
+          ul
+            li świetliki dachowe
+            li dodatkowe otwory wentylacyjne
+            li bramy
+            li drzwi techniczne 
+            li grafiki
+            li rynny
+            li powłoki anty-kondensacyjne 
+            li powłoki przeciw-skraplające
+            li fartuchy na dole hali
+        
+        .col-lg-6.mt-5
+          #carouselExampleControls4.carousel.slide data-ride="carousel" 
+            .carousel-inner.my-carousel
+              .carousel-item.active
+                = image_tag  "slide1.jpg", class: "d-block w-100" 
+              .carousel-item
+                = image_tag  "slide2.jpg", class: "d-block w-100" 
+              .carousel-item
+                = image_tag  "slide3.jpg", class: "d-block w-100" 
+              .carousel-item
+                = image_tag  "slide4.jpg", class: "d-block w-100" 
+              .carousel-item
+                = image_tag  "slide5.jpg", class: "d-block w-100" 
+              .carousel-item
+                = image_tag  "slide6.jpg", class: "d-block w-100" 
+            a.carousel-control-prev data-slide="prev" href="#carouselExampleControls4" role="button" 
+              span.carousel-control-prev-icon aria-hidden="true" 
+              span.sr-only Poprzednie
+            a.carousel-control-next data-slide="next" href="#carouselExampleControls4" role="button" 
+              span.carousel-control-next-icon aria-hidden="true" 
+              span.sr-only Następne
 
   .phone-view-rapair
