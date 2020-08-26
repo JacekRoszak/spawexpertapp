@@ -14,17 +14,25 @@
  *= require_self
  */
 
- @media (max-width: 582px){
+
+ @media (max-width: 532px){
+ .row1{
+       margin-left: auto;
+       margin-right: auto;
+       float: none !important;
+ }
+
+}
+
+
+ @media (max-width: 512px){
       .logo{background-image: asset_url('1.png');
             width: 75vw;
             max-width: 160px;
             height: 34vw;
             max-height: 80px;
       }
-      .phone-view-rapair{
-            height: 50px;
-            width: 100%;
-      }    
+          
       #main-header-offer{
             font-size: 30px !important;
       }  
@@ -33,7 +41,7 @@
       }
 
  }
- @media (min-width: 583px) and (max-width: 768px){
+ @media (min-width: 513px) and (max-width: 768px){
       .logo{background-image: asset_url('logosm.png');
             height: 200px;
             width: 150px;
