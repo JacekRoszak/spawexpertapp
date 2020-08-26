@@ -82,17 +82,12 @@
       margin: 0 !important;
 }
 
-.row1{
-      width: 100%;
-}
 
-.row2{
-      width: 100%;
-}
 
 
 .contact-div{
       float: right;
+
 }
 
 
@@ -104,7 +99,6 @@ body{
       margin: 0px !important;
       height: 100vh;
       overflow: auto;
-      width: 100vw;
       overflow-x: hidden;
 }
 
@@ -161,12 +155,8 @@ p{            margin-bottom: 0px !important; }
 
 }
 
-.btn-lg {
-      border-bottom: solid coral 3px;
-      
-}
 
-h1{        font-size: 42px !important; margin-top: 35px; }
+h1{        font-size: 42px !important; margin-top: 35px;  }
 h2{        font-size: 36px !important; margin-top: 30px;  }
 h3{        font-size: 30px !important; margin-top: 30px;  }
 .h4{       font-size: 26px !important;   }
@@ -249,13 +239,30 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       .contact-div{
             display: none !important;
       }
-
+      .btn-lg a{
+            text-decoration-style: solid;
+            text-decoration-thickness: 3px !important;
+            text-decoration-color: coral;
+            text-decoration-line: underline;
+            }
+      .row1, .my-nav{
+            display: inline-block !important;
+      }
+      
 
 }
 
 
 @media (min-width: 992px) {
+      .card-div{
+            margin: 8px;
+      }
 
+      .btn-lg {
+            border-bottom: solid coral 3px;
+            
+      }
+      
       .contact-div{
             display: inline-block !important;
       }
@@ -292,6 +299,10 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       .card-inner:hover{
         z-index: 1000 !important;
         transform: scale(1.5);
+      }
+
+      .row1{
+            width: 100%;
       }
       .page-top{
         min-height: 215px;
