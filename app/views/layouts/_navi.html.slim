@@ -1,20 +1,22 @@
 .page-top.mb-4
     .row1
-        = link_to '', root_path, class: "btn logo d-inline-block p-0 mt-1 mx-auto"
-        .contact-div
-            h4.m-4 &#9742; 695 825 522 &#9993; eliasz.rachota@spawexpert.eu
-    nav.navbar.navbar-expand-lg.navbar-light.my-nav.text-center
-            button.mx-auto.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
-                span.navbar-toggler-icon
-            .my-nav-menu.mx-auto
-                .collapse.navbar-collapse.mx-auto.my-auto#navbarSupportedContent
-                    ul.navbar-nav.mx-auto.text-center.mt-0
-                        li.nav-item.btn-lg
-                            = link_to "OFERTA", root_path, class: "text-dark" 
-                        li.nav-item.btn-lg
-                            = link_to "REALIZACJE", realizations_path, class: " text-dark" 
-                        li.nav-item.dropdown.btn-lg
-                                = link_to "KONSTRUKCJA", law_path, class: "text-dark" 
-                        li.nav-item.btn-lg
-                            = link_to "KONTAKT", about_path, class: "text-dark" 
- 
+        .container
+            = link_to '', root_path, class: "btn logo d-inline-block p-0 mt-1 mx-auto"
+            .contact-div
+                h4.m-4 &#9742; 695 825 522 &#9993; eliasz.rachota@spawexpert.eu
+    .row1
+        nav.navbar.navbar-expand-lg.navbar-light.my-nav.text-center
+                button.mx-auto.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
+                    span.navbar-toggler-icon
+                .my-nav-menu.mx-auto
+                    .collapse.navbar-collapse.mx-auto.my-auto#navbarSupportedContent
+                        ul.navbar-nav.mx-auto.text-center.mt-0
+                            li.nav-item.btn-lg
+                                = link_to "OFERTA", root_path, class: "text-dark" 
+                            li.nav-item.btn-lg
+                                = link_to "REALIZACJE", realizations_path, class: " text-dark" 
+                            li.nav-item.dropdown.btn-lg
+                                    = link_to "KONSTRUKCJA", law_path, class: "text-dark" 
+                            li.nav-item.btn-lg
+                                = link_to "KONTAKT", about_path, class: "text-dark" 
+    

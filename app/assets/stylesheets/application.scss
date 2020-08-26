@@ -133,7 +133,8 @@ p{            margin-bottom: 0px !important; }
     height: 60px;   }
 
 .logo{background-size: contain;
-      background-repeat: no-repeat;  }
+      background-repeat: no-repeat;  
+            }
 
 #about-card{
       max-width: 600px;
@@ -247,6 +248,7 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
             }
       .row1, .my-nav{
             display: inline-block !important;
+            float: left;
       }
       
 
@@ -278,7 +280,7 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       .logo{background-image: asset_url('1.png');
             height: 140px;
             width: 380px;
-            }
+            float: left;}
 
       #realization-conteiner, #law-container{
             width: 80vw;
@@ -307,6 +309,7 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       .page-top{
         min-height: 215px;
         z-index: 1 !important;
+        text-align: center;
       }
 }
 
