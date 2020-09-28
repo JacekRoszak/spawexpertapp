@@ -217,7 +217,7 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
 
 @media (max-width: 991px) {
       #side-material img{
-            width: 60vw;
+            width: 60%;
             height: auto;
       }
 
@@ -227,15 +227,15 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       }
 
       .my-nav-menu{
-            width: 50vw;
+            width: 50%;
             min-width: 334px;
             text-align: center;
       }
 
       body{ line-height: 1.2;      }
       #realization-conteiner, #law-container{
-            width: 100vw;
-            max-width: 100vw !important;
+            width: 100%;
+            max-width: 100% !important;
             padding: 0;
             margin: 0;
       }
@@ -273,12 +273,12 @@ h3{        font-size: 30px !important; margin-top: 30px;  }
       }
   
       #realization-conteiner, #law-container{
-            width: 80vw;
-            max-width: 80vw !important;
+            width: 80%;
+            max-width: 80% !important;
       }
           
       #side-material img{
-        width: 20vw;
+        width: 20%;
         height: auto;
       }
       
