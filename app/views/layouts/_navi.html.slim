@@ -1,14 +1,16 @@
-.page-top.text-center
-    .row
-        .row1
-            = image_tag  "logosm.png", class: "logo"
-        .row2
-            .d-inline-block.btn-lg.mx-3
-                = link_to "OFERTA", root_path, class: "text-dark nav-btn" 
-            .d-inline-block.btn-lg.mx-3
-                = link_to "REALIZACJE", realizations_path, class: " text-dark nav-btn" 
-            .d-inline-block.btn-lg.mx-3
-                    = link_to "KONSTRUKCJA", law_path, class: "text-dark nav-btn" 
-            .d-inline-block.btn-lg.mx-3
-                = link_to "KONTAKT", about_path, class: "text-dark nav-btn" 
-        
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand href="#"
+		= image_tag  "logo.png", class: "logo"
+  button.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+				.d-inline-block
+					= link_to "Oferta", root_path
+				.d-inline-block
+					= link_to "Realizacje", realizations_path
+				.d-inline-block
+					= link_to "Konstrukcja", law_path
+				.d-inline-block
+					= link_to "Kontakt", about_path

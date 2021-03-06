@@ -70,12 +70,6 @@
     }
 }
 
-.nav-btn {
-    width: 240px;
-    padding: 5px;
-    text-shadow: 2px 2px white;
-}
-
 @media (min-width: 1550px) {
     .btn-lg {
         font-size: 36px !important;
@@ -294,12 +288,6 @@ h3 {
     }
 }
 
-.page-top,
-.row,
-.row1 {
-    max-height: 290px;
-}
-
 @media (min-width: 992px) {
     .card-div {
         margin: 8px;
@@ -360,12 +348,6 @@ h3 {
     }
 }
 
-.logo {
-    height: auto;
-    max-height: 230px;
-    background: rgba($color: #FFFFFF, $alpha: 0.2);
-}
-
 @media (max-width: 1199px) {
     .carousel-container {
         margin: 0 auto;
@@ -389,35 +371,29 @@ h3 {
     }
 }
 
-.row1 {
-    padding: 15px;
-    width: 40%;
-    display: block;
-    top: 0;
-    position: relative;
+// ##########################
+.navbar-nav {
+    margin-left: auto !important;
+    & .nav-item {
+        margin: 10px auto;
+        width: fit-content;
+        & a {
+            font-weight: bold;
+            color: black;
+            line-height: 2.5 !important;
+            margin: 0 10px;
+            &:hover {
+                color: black;
+                text-decoration-style: solid;
+                text-decoration-thickness: 3px !important;
+                text-decoration-color: rgb(229, 46, 51);
+                text-decoration-line: underline;
+                text-underline-offset: 10px;
+            }
+        }
+    }
 }
 
-.row2 {
-    width: 60%;
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.footer {
-    width: 100%;
-    margin: 0;
-    background-color: black;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-size: 18px !important;
-    line-height: 1.2;
-}
-
-.coral-decoration {
-    text-decoration-style: solid;
-    text-decoration-thickness: 3px !important;
-    text-decoration-color: coral;
-    text-decoration-line: underline;
+.logo {
+    max-height: 90px;
 }
