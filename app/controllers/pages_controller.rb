@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
   def offer
   end
+  
+  def offer2
+  end
 
   def realizations
   end
@@ -10,5 +13,4 @@ class PagesController < ApplicationController
 
   def about
   end
-  
 end
